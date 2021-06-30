@@ -1,0 +1,52 @@
+@font-face
+  font-family: 'Lato'
+  src: local('Lato Regular'), local('Lato-Regular'), url('../fonts/latoregular.woff2') format('woff2'), url('../fonts/latoregular.woff') format('woff')
+  font-weight: 400
+  font-style: normal
+@font-face
+  font-family: 'Lato'
+  src: local('Lato Black'), local('Lato-Black'), url('../fonts/latoblack.woff2') format('woff2'), url('../fonts/latoblack.woff') format('woff')
+  font-weight: 900
+  font-style: normal
+@font-face
+  font-family: 'Roboto Slab'
+  src: local('Roboto Slab Bold'), local('RobotoSlab-Bold'), url('../fonts/Robotoslabbold.woff2') format('woff2'), url('../fonts/Robotoslabbold.woff') format('woff')
+  font-weight: 700
+  font-style: normal
+*
+  box-sizing: border-box
+body
+  font-family: Lato, sans-serif
+  font-weight: 400
+  color: $text-color
+  background-color: #EDEFF0
+.container
+  display: grid
+  grid-template: min-content / 1fr 1140px 1fr
+.inner
+  grid-column: 2
+  display: grid
+  grid-template-columns: repeat(4, 1fr)
+  column-gap: 30px
+
+@media (max-width: 1200px)
+  .container
+    grid-template: min-content / 1fr 960px 1fr
+
+@media (max-width: 992px)
+  .container
+    grid-template: min-content / 1fr 700px 1fr
+  .inner
+    grid-template-columns: repeat(3, 1fr)
+
+@media (max-width: 767px)
+  .container
+    grid-template: min-content / 1fr 567px 1fr
+  .inner
+    grid-template-columns: repeat(2, 1fr)
+@media (max-width: 576px)
+  .container
+    grid-template: min-content / 1fr 87% 1fr
+  .inner
+    column-gap: 20px
+    grid-template-columns: 1fr

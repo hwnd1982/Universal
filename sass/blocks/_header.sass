@@ -1,0 +1,75 @@
+.header
+  &__container
+    background: #262D33
+  &__logo
+  &__inner
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 15px 0
+  &__nav-menu
+    margin-left: 84px
+    margin-right: 88px
+  &__button
+    background: #656B70
+    border-radius: 10px
+    border: none
+    padding-top: 10px
+    padding-bottom: 10px
+    padding: 10px 65px
+    white-space: nowrap
+    font-size: 14px
+    line-height: 20px
+    color: $text-color
+    display: flex
+    align-items: center
+    text-align: center
+    cursor: pointer
+  &__mobile-menu
+    display: none
+
+@media (max-width: 1200px)
+  .header
+    &__nav-menu
+      margin: 0
+
+@media (max-width: 992px)
+  .header
+    &__button
+      padding: 5px 22.2px
+      font-size: 12px
+      line-height: 20px
+
+@media (max-width: 767px)
+  .header
+    position: fixed
+    width: 100vw
+    z-index: 99
+    &__button
+      display: none
+    &__mobile-menu
+      display: flex
+      position: relative
+      height: 16px
+      align-items: center
+      &-line
+        display: block
+        height: 1px
+        width: 16px
+        background-color: #ffffff
+      &::after
+        position: absolute
+        top: 0
+        left: 0
+        content: ''
+        height: 1px
+        width: 16px
+        background-color: #ffffff
+      &::before
+        position: absolute
+        bottom: 0
+        left: 0
+        content: ''
+        height: 1px
+        width: 16px
+        background-color: #ffffff
