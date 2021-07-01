@@ -1,7 +1,9 @@
 .author-info
   display: flex
+  align-items: center
   height: 45px
   width: 140px
+  text-decoration: none
   &__avatar
     width: 45px
     height: 45px
@@ -12,7 +14,6 @@
     margin-left: 10px
     flex-direction: column
     color: $text-color
-    text-decoration: none
   &__name
     font-size: 14px
     line-height: 20px
@@ -22,3 +23,9 @@
     font-size: 12px
     line-height: 15px
     opacity: 0.4
+
+@media (max-width: 576px)
+  .author-info
+    &__avatar
+      width: 35px
+      height: 35px

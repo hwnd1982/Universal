@@ -1,0 +1,45 @@
+.info-cards
+  &__container
+    padding-bottom: 30px
+  &__inner
+    grid-template-rows: repeat(4, 1fr)
+    row-gap: 30px
+  &__item
+    border-radius: 10px
+    background-color: $text-color
+    &-default
+      padding: 25px 25px 30px
+    &-article
+      &-a
+        padding: 15px 0 0 0
+      &-b
+        background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url(../img/article-b.jpg)
+        background-size: cover
+        padding: 19px 26px 25px 25px
+    &-files
+      background: #3BBDC4
+    &_big
+      grid-column: span 2
+      grid-row: span 2
+    &_medium
+      grid-row: span 2
+
+@media (max-width: 1200px)
+  .info-cards
+    &__item
+      &-default
+        padding: 25px 18px 30px
+
+@media (max-width: 992px)
+  .info-cards
+    &__inner
+      gap: 25px
+      grid-template-rows: repeat(6, 1fr)
+
+@media (max-width: 576px)
+  .info-cards
+    &__inner
+      grid-template-rows: repeat(14, 1fr)
+    &__item
+      &_big
+        grid-column: 1

@@ -1,0 +1,246 @@
+.card-content
+  display: grid
+  &-default
+    grid-template-rows: min-content 1fr 1fr
+    height: 115px
+    &__title
+      margin-top: 0
+      margin-bottom: 5px
+      font-family: Roboto Slab, serif
+      font-weight: 700
+      font-size: 16px
+      line-height: 25px
+      color: #262D33
+      overflow: hidden
+      text-overflow: ellipsis
+      white-space: normal
+    &__text
+      font-size: 14px
+      line-height: 20px
+      color: #4B5157
+    &__data
+      margin-top: auto
+      display: block
+      font-size: 12px
+      line-height: 15px
+      color: #939699
+  &-article
+    &-a
+      grid-template-columns: 35px 228px 1fr
+      background: url(../img/article-a.png)
+      background-repeat: no-repeat
+      background-position: right top
+      &__section
+        margin-top: 20px
+        grid-column: 2
+        font-weight: 900
+        font-size: 12px
+        line-height: 15px
+        letter-spacing: 0.5px
+        text-transform: uppercase
+        color: #6E99AE
+      &__title
+        grid-column: 2
+        margin-top: 20px
+        margin-bottom: 25px
+        font-family: Roboto Slab
+        font-weight: 700
+        font-size: 25px
+        line-height: 30px
+        color: #262D33
+      &__text
+        grid-column: 2
+        margin-bottom: 49px
+        font-size: 14px
+        line-height: 20px
+        color: #4B5157
+      &__divider
+        grid-column: 1 / 4
+        background: #D9DADB
+        width: 100%
+        height: 1px
+      &__comments
+        display: flex
+        align-items: center
+        grid-column: 1 / 4
+        padding: 13px 35px
+      &__avatar
+        border-radius: 50%
+        width: 30px
+        height: 30px
+      &__user-name
+        margin-left: 10px
+        margin-right: 5px
+        font-weight: 900
+        font-size: 14px
+        line-height: 20px
+        color: #262D33
+      &__comment
+        font-size: 14px
+        line-height: 20px
+        color: #4B5157
+        &-icon
+          margin-left: 14px
+          margin-right: 5px
+          fill: #BCBFC2
+        &-counter
+          font-size: 12px
+          line-height: 15px
+          color: #939699
+    &-b
+      height: 100%
+      grid-template-columns: 212px
+      grid-template-rows: repeat(3, min-content ) 1fr
+      &__label
+        width: 95px
+        font-size: 12px
+        line-height: 15px
+        border-radius: 3px
+        padding: 5px 12px
+        background: #3DC47E
+      &__section
+        margin-top: 116px
+        font-weight: 900
+        font-size: 12px
+        line-height: 15px
+        letter-spacing: 0.5px
+        text-transform: uppercase
+        color: #E7D9FF
+      &__title
+        margin-top: 23px
+        margin-bottom: 27px
+        font-family: Roboto Slab
+        font-weight: 700
+        font-size: 16px
+        line-height: 25px
+        letter-spacing: 0.5px
+        text-transform: uppercase
+      &__comments
+        display: flex
+        flex-wrap: nowrap
+        align-items: center
+        align-self: end
+      &__avatar
+        width: 45px
+        height: 45px
+        border-radius: 50%
+      &__user-name
+        flex-basis: 100%
+        font-size: 14px
+        line-height: 20px
+        mix-blend-mode: normal
+        opacity: 0.85
+      &__data, &__like-counter, &__comment-counter
+        font-size: 12px
+        line-height: 15px
+        mix-blend-mode: normal
+        opacity: 0.4
+      &__info-group
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+        width: 157px
+        margin-left: 10px
+      &__comment, &__like
+        &-icon
+          fill: $text-color
+          opacity: 0.4
+          margin-left: 7px
+          margin-right: 5px
+
+@media (max-width: 1200px)
+  .card-content
+    &-default
+      height: 133px
+      &__text
+        font-size: 13px
+      &__title
+        font-size: 14px
+        line-height: 23px
+    &-article
+      &-a
+        grid-template-columns: 20px 228px 1fr
+        background-size: 50%
+        &__text
+          grid-column: 2 / 4
+          margin-bottom: 20px
+        &__user-name
+          text-align: right
+        &__title
+          margin-top: 15px
+          margin-bottom: 95px
+        &__comments
+          flex-wrap: wrap
+        &__avatar
+          transform: translate(0, 12px) scale(1.4)
+          margin-left: 8px
+        &__user-name
+          margin-left: 20px
+        &__comment
+          flex-basis: 100%
+          order: 1
+          margin-left: 58px
+          &-icon
+            margin-left: auto
+      &-b
+        grid-template-columns: 166px
+        &__data
+          flex-basis: 100%
+          order: 1
+        &__comment
+          &-icon
+            margin-left: 0
+
+@media (max-width: 767px)
+  .card-content
+    &-default
+      height: 110px
+    &-article
+      &-a
+        &__title
+          margin-bottom: 20px
+        &__text
+          grid-column: 2
+          margin-bottom: 22px
+        &__avatar
+          margin-left: 0
+        &__comment
+          margin-left: 50px
+      &-b
+        grid-template-columns: 212px
+        &__data
+          flex-basis: 68px
+          order: 0
+        &__comment
+          &-icon
+            margin-left: 7px
+@media (max-width: 576px)
+  .card-content
+    &-article
+      &-a
+        background-size: 50%
+        &__text
+          grid-column: 2 / 4
+          margin-bottom: 15px
+          padding-right: 20px
+          font-size: 13px
+        &__section
+          margin-top: 0
+        &__title
+          margin-top: 114px
+          margin-bottom: 15px
+          font-size: 20px
+          line-height: 25px
+        &__comments
+          padding: 10px 20px
+        &__avatar
+          transform: none
+          margin-left: 0
+        &__user-name
+          font-size: 12px
+          margin-left: 10px
+        &__comment
+          font-size: 11px
+          margin-left: 0
+          &-icon
+            margin-left: auto
