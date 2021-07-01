@@ -467,8 +467,7 @@ body {
 }
 
 .header__nav-menu {
-  margin-left: 84px;
-  margin-right: 88px;
+  margin-right: 4px;
 }
 
 .header__button {
@@ -604,7 +603,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 100%;
+  width: 543px;
 }
 
 .nav-menu__link {
@@ -617,6 +616,9 @@ body {
 }
 
 @media (max-width: 992px) {
+  .nav-menu {
+    width: 370px;
+  }
   .nav-menu__link {
     font-size: 12px;
     line-height: 20px;
@@ -1052,6 +1054,7 @@ body {
   font-weight: 900;
   font-size: 14px;
   line-height: 20px;
+  width: 151px;
 }
 
 .hero-extra__content {
@@ -1146,8 +1149,8 @@ body {
 }
 
 .info-cards__inner {
-  -ms-grid-rows: (1fr)[4];
-      grid-template-rows: repeat(4, 1fr);
+  -ms-grid-rows: (170px)[4];
+      grid-template-rows: repeat(4, 170px);
   row-gap: 30px;
 }
 
@@ -1168,6 +1171,7 @@ body {
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(64, 48, 61, 0.35)), to(rgba(64, 48, 61, 0.35))), url(../img/article-b.jpg);
   background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url(../img/article-b.jpg);
   background-size: cover;
+  background-position-x: center;
   padding: 19px 26px 25px 25px;
 }
 
@@ -1665,7 +1669,7 @@ body {
 .card-content-tags__link {
   border: 1px solid #D9DADB;
   border-radius: 5px;
-  padding: 5px 15px;
+  padding: 4px 14px;
   text-decoration: none;
   font-weight: 900;
   font-size: 14px;
