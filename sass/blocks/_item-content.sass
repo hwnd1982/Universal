@@ -148,6 +148,24 @@
           opacity: 0.4
           margin-left: 7px
           margin-right: 5px
+    &-c
+      height: 100%
+      grid-template-rows: 275px 1fr
+      &__img
+        grid-row: 1
+        width: 100%
+        height: 100%
+        object-fit: cover
+      &__title
+        align-self: center
+        margin: 0
+        width: 235px
+        padding: 15px 25px 30px
+        font-family: Roboto Slab
+        font-weight: bold
+        font-size: 16px
+        line-height: 25px
+        color: #262D33
   &-files
     position: relative
     height: 100%
@@ -190,6 +208,69 @@
     &__download-icon
       fill: $text-color
       margin-right: 10px
+  &-tags
+    &__title
+      margin: 0
+      padding: 0 25px
+      font-weight: 900
+      font-size: 14px
+      line-height: 20px
+      letter-spacing: 0.5px
+      text-transform: uppercase
+      color: #262D33
+    &__divider
+      margin-top: 19px
+      margin-bottom: 25px
+      width: 100%
+      height: 1px
+      background: #D9DADB
+    &__links
+      padding-left: 25px
+      height: 100%
+      display: flex
+      flex-wrap: wrap
+    &__link
+      border: 1px solid #D9DADB
+      border-radius: 5px
+      padding: 5px 15px
+      text-decoration: none
+      font-weight: 900
+      font-size: 14px
+      line-height: 20px
+      color: #262D33
+      margin-bottom: 15px
+      margin-right: 10px
+  &-links
+    &__title
+      margin-top: 30px
+      margin-bottom: 25px
+      justify-self: center
+      font-family: Roboto Slab
+      font-weight: 700
+      font-size: 20px
+      line-height: 25px
+      color: #262D33
+    &__links
+      width: 190px
+      display: flex
+      justify-content: space-between
+      justify-self: center
+    &__link
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 50px
+      height: 50px
+      border-radius: 50%
+      text-decoration: none
+      &_facebook
+        background: #4267B2
+      &_twitter
+        background: #1DA1F2
+      &_youtube
+        background: #FF0000
+    &__icons
+      fill: $text-color
 
 @media (max-width: 1200px)
   .card-content
@@ -233,9 +314,30 @@
         &__comment
           &-icon
             margin-left: 0
+      &-c
+        &__title
+          width: 220px
     &-files
       &__title
         line-height: 22px
+    &-tags
+      &__links
+        // padding: 0 5px
+      &__link
+        padding: 5px 12px
+        font-size: 13px
+    &-links
+      &__links
+        width: 170px
+
+@media (max-width: 992px)
+  .card-content
+    &-links
+      display: flex
+      align-items: center
+      justify-content: space-evenly
+      &__links
+        width: 240px
 
 @media (max-width: 767px)
   .card-content
@@ -260,6 +362,16 @@
         &__comment
           &-icon
             margin-left: 7px
+    &-tags
+      &__link
+        padding: 5px 15px
+        font-size: 14px
+    &-links
+      flex-direction: column
+      &__links
+        margin-bottom: 25px
+        width: 170px
+
 @media (max-width: 576px)
   .card-content
     &-article
