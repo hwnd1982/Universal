@@ -1,6 +1,6 @@
 .info-cards
   &__container
-    padding-bottom: 30px
+    padding-bottom: 60px
   &__inner
     grid-template-rows: repeat(4, 170px)
     row-gap: 30px
@@ -59,6 +59,8 @@
 
 @media (max-width: 767px)
   .info-cards
+    &__container
+      padding-bottom: 50px
     &__inner
       gap: 25px
       grid-template-rows: repeat(6, 1fr)
@@ -79,6 +81,8 @@
 
 @media (max-width: 576px)
   .info-cards
+    &__container
+      padding-bottom: 40px
     &__inner
       grid-template-rows: repeat(10, min-content)
     &__item

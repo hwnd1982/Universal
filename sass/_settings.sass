@@ -5,6 +5,10 @@
   font-style: normal
 @font-face
   font-family: 'Lato'
+  src: local('Lato Heavy Italic'), local('Lato-HeavyItalic'), url('../fonts/latoheavyitalic.woff2') format('woff2'), url('../fonts/latoheavyitalic.woff') format('woff')
+  font-style: italic
+@font-face
+  font-family: 'Lato'
   src: local('Lato Black'), local('Lato-Black'), url('../fonts/latoblack.woff2') format('woff2'), url('../fonts/latoblack.woff') format('woff')
   font-weight: 900
   font-style: normal
@@ -13,6 +17,7 @@
   src: local('Roboto Slab Bold'), local('RobotoSlab-Bold'), url('../fonts/Robotoslabbold.woff2') format('woff2'), url('../fonts/Robotoslabbold.woff') format('woff')
   font-weight: 700
   font-style: normal
+
 *
   box-sizing: border-box
 body
@@ -29,6 +34,27 @@ body
   grid-template-columns: repeat(4, 1fr)
   column-gap: 30px
 
+.section
+  display: block
+  font-weight: 900
+  font-size: 12px
+  line-height: 15px
+  letter-spacing: 0.5px
+  text-transform: uppercase
+  &_blue
+    color: #4592FF
+  &_bluegreen
+    color: #3BBDC4
+  &_greyblue
+    color: #6E99AE
+  &_purple
+    color: #AC8EE3
+  &_orange
+    color: #FFA34D
+  &_green
+    color: #3DC47E
+  &_red
+    color: #FF4F52
 @media (max-width: 1200px)
   .container
     grid-template: min-content / 1fr 960px 1fr
