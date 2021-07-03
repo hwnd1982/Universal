@@ -1,0 +1,64 @@
+.other-cards
+  &__container
+    background: #262D33
+  &__inner
+    padding: 60px 0
+    gap: 30px
+    grid-template-rows: repeat(3, 170px)
+    grid-template-columns: repeat(4, 262.5px)
+  &__item
+    border-radius: 10px
+    background-color: $text-color
+    overflow: hidden
+    &-default
+      padding: 25px 25px 30px
+    &-big
+      grid-column: span 2
+      grid-row: span 2
+    &-full
+      grid-column: span 2
+      grid-row: span 3
+    &-article
+      &-d
+        background: #B4D1E0
+
+@media (max-width: 1200px)
+  .other-cards
+    &__inner
+      grid-template-rows: repeat(3, 186px)
+      grid-template-columns: repeat(4, 212px)
+    &__item
+      &-default
+        padding: 25px 18px 30px
+
+@media (max-width: 992px)
+  .other-cards
+    &__inner
+      gap: 25px
+      grid-template-columns: repeat(3, 216.5px)
+    &__item
+      &-full
+        grid-column: span 3
+      &-default
+
+@media (max-width: 767px)
+  .other-cards
+    &__inner
+      gap: 25px
+      grid-template-columns: repeat(2, 271px)
+    &__item
+      &-full
+        grid-column: span 2
+
+@media (max-width: 576px)
+  .other-cards
+    &__inner
+      gap: 25px
+      grid-template-columns: 1fr
+    &__item
+      &-full
+        grid-row: span 2
+      // &-big
+      //   grid-row: span 1
+      &-full, &-big
+        grid-column: span 1
