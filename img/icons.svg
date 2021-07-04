@@ -35,4 +35,10 @@
   <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="close-button">
     <path d="M8 6.598L14.308.29a.991.991 0 011.402 1.402L9.402 8l6.308 6.308a.991.991 0 11-1.402 1.402L8 9.402 1.692 15.71A.991.991 0 11.29 14.308L6.598 8 .29 1.692A.991.991 0 011.692.29L8 6.598z"></path>
   </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15" id="clock-icon">
+    <path d="M7.5 14.25a6.75 6.75 0 110-13.5 6.75 6.75 0 010 13.5zm.75-6.75v-3a.75.75 0 00-1.5 0v3.75c0 .414.336.75.75.75h2.25a.75.75 0 000-1.5h-1.5z"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 17" id="home-icon">
+    <path d="M2 17h5v-6h4v6h5v-7h2L9 0 0 10h2v7z"></path>
+  </symbol>
 </svg>

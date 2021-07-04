@@ -10,6 +10,10 @@
     text-decoration: none
     color: $text-color
     white-space: nowrap
+    &_light
+      color: #939699
+  &_additional-page
+    width: 880px
 
 @media (max-width: 992px)
   .nav-menu
@@ -22,16 +26,19 @@
     position: absolute
     flex-direction: column
     right: 0
-    top: 50px
+    top: 57px
     width: 210px
     height: 290px
     align-items: center
     padding: 25px 25px
     background-color: #262D33
     border-radius: 10px
+    border: 1px solid #D9DADB
     transition: all 0.5s ease 0s
-    transform: translate(0, -100%)
+    transform: translate(0, -105%)
     z-index: -1
+    &_light
+      background-color: $text-color
     &.active
       transform: translate(0, 0)
     &__link

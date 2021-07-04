@@ -26,35 +26,87 @@
     grid-template-columns: 336px 437px
     column-gap: 25px
     height: 100%
+    &_additional-page
+      grid-column: span 3
+      gap: 0
+      grid-template-columns: 1fr 946px 1fr
+      padding: 60px 0 72px
   &__img
     width: 100%
     height: 100%
     object-fit: cover
+    &_additional-page
+      position: relative
+      z-index: -2
     &-wrap
       width: 336px
       height: 195px
       overflow: hidden
-      object-fit: cover
+      &_additional-page
+        position: absolute
+        width: 100%
+        height: 100%
+        background: linear-gradient(0deg, rgba(38, 45, 51, 0.75), rgba(38, 45, 51, 0.75))
   &__info
     width: 437px
     display: grid
     grid-template-rows: repeat(3, min-content) 1fr
+    &_additional-page
+      grid-column: 2
+      position: relative
+      z-index: 5
+      width: 100%
     &-group
       margin-bottom: 5px
       align-self: end
       display: flex
+      align-items: center
+      &_additional-page
+        margin: 0
+    &-top-group
+      display: flex
+      justify-content: space-between
       align-items: center
   &__bookmark
     position: absolute
     right: 25px
     top: 25px
     fill: #BCBFC2
+    z-index: 5
+    &_additional-page
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 30px
+      height: 30px
+      left: -97px
+      top: 90px
     &.checked
       fill: #FF4F52
     &-icon
       fill: inherit
+  &__nav-menu
+    display: flex
+    align-items: center
   &__section
     margin-top: 5px
+  &__link
+    text-decoration: none
+    color: $text-color
+    font-weight: 900
+    font-size: 14px
+    line-height: 20px
+    &_home
+      margin-right: 35px
+    &_prev
+      margin-right: 20px
+    &-icon
+      fill: $text-color
+      margin-left: 5px
+      &_inverted
+        transform: rotate(180deg)
+        margin-left: 0
+        margin-right: 5px
   &__title
     margin-top: 15px
     margin-bottom: 10px
@@ -63,33 +115,70 @@
     font-size: 20px
     line-height: 25px
     color: #262D33
+    &_additional-page
+      width: 80%
+      font-size: 55px
+      line-height: 70px
+      color: $text-color
+      margin-top: 50px
+      margin-bottom: 30px
   &__text
     margin: 0
     font-size: 14px
     line-height: 20px
     color: #4B5157
+    &_additional-page
+      width: 69%
+      font-size: 18px
+      line-height: 30px
+      color: $text-color
+      mix-blend-mode: normal
+      opacity: 0.85
+      margin-bottom: 43px
   &__data
     font-size: 12px
     line-height: 15px
     color: #939699
+    &_additional-page
+      color: #FFFFFF
+      mix-blend-mode: normal
+      opacity: 0.85
+  &__clock
+    &-icon
+      margin-right: 5px
+      fill: rgba(255, 255, 255, 0.4)
   &__like
     &-icon
       margin-left: 10px
       margin-right: 5px
       fill: #939699
+      &_additional-page
+        margin-left: 20px
+        fill: rgba(255, 255, 255, 0.4)
     &-counter
       font-size: 12px
       line-height: 15px
       color: #939699
+      &_additional-page
+        color: #FFFFFF
+        mix-blend-mode: normal
+        opacity: 0.85
   &__comment
     &-counter
       font-size: 12px
       line-height: 15px
       color: #939699
+      &_additional-page
+        color: #FFFFFF
+        mix-blend-mode: normal
+        opacity: 0.85
     &-icon
       margin-left: 10px
       margin-right: 5px
       fill: #939699
+      &_additional-page
+        margin-left: 20px
+        fill: rgba(255, 255, 255, 0.4)
   &-extra
     &__additional
       height: 770px
@@ -167,22 +256,38 @@
       grid-template-rows: repeat(4, min-content 1px) min-content
     &__item
       grid-template-columns: 285px 383px
+      padding: 15px
+      column-gap: 15px
+      &_additional-page
+        grid-column: span 3
+        gap: 0
+        grid-template-columns: 1fr 765px 1fr
+        padding: 60px 0 72px
     &__img
       &-wrap
         width: 285px
         height: 214px
+        &_additional-page
+          width: 100%
+          height: 100%
     &__info
       width: 383px
+      &_additional-page
+        width: 100%
     &__divider
       margin: 0 15px
-    &__item
-      padding: 15px
-      column-gap: 15px
     &__bookmark
       right: 15px
       top: 15px
+      &_additional-page
+        left: -97px
+        top: 90px
     &__title
       font-size: 18px
+      &_additional-page
+        font-size: 48px
+        line-height: 60px
+        width: 90%
     &-extra
       &__rubric
         font-size: 12px
@@ -200,8 +305,27 @@
       grid-column: span 3
     &__item
       grid-template-columns: 285px 370px
+      &_additional-page
+        grid-column: span 3
+        grid-template-columns: 1fr 590px 1fr
+        padding: 50px 62px
+    &__bookmark
+      &_additional-page
+        left: -58px
+    &__title
+      &_additional-page
+        font-size: 40px
+        line-height: 60px
+        width: 100%
+    &__text
+      &_additional-page
+        width: 80%
+        font-size: 16px
+        line-height: 25px
     &__info
       width: 370px
+      &_additional-page
+        width: 100%
     &-extra
       &__additional
         grid-column: span 3
@@ -255,15 +379,40 @@
       width: 527px
     &__item
       grid-template-columns: 220px 262px
+      &_additional-page
+        grid-template-columns: 1fr 527px 1fr
+        padding-top: 90px
+    &__bookmark
+      &_additional-page
+        top: 0
+        left: 0
+        width: 20px
+        height: 20px
+      &-icon
+        &_additional-page
+          width: 14px
+          height: 18px
     &__title
       font-size: 16px
       line-height: 20px
+      &_additional-page
+        font-size: 38px
+        line-height: 58px
+    &__text
+      width: 90%
     &__info
       width: 262px
+      &_additional-page
+        width: 100%
+      &-top-group
+        margin-left: 50px
     &__img
       &-wrap
         width: 220px
         height: 240px
+        &_additional-page
+          width: 100%
+          height: 100%
     &-extra
       &__additional
         grid-column: span 2
@@ -315,6 +464,33 @@
         &_full
           margin: 0
 
+@media (max-width: 650px)
+  .articles
+    &__item
+      &_additional-page
+        grid-template-columns: 1fr
+        grid-template-rows: 1fr
+    &__info
+      &-top-group
+        margin-left: 0
+        flex-direction: column
+        align-items: flex-start
+    &__title
+      &_additional-page
+        font-size: 30px
+        line-height: 55px
+    &__link
+      &_home
+        margin-right: 20px
+      &_prev
+        margin-right: 15px
+    &__nav-menu
+      order: -1
+      margin-bottom: 25px
+    &__bookmark
+      &_additional-page
+        top: 50px
+        left: 94%
 @media (max-width: 576px)
   .articles
     &__inner
@@ -326,17 +502,29 @@
       grid-template-columns: 1fr
       grid-template-rows: min-content min-content
       padding: 25px
+      &_additional-page
+        grid-template-columns: 1fr 87% 1fr
+        grid-template-rows: 1fr
+        padding: 90px 0 40px
     &__info
       width: 100%
       height: 240px
+      &_additional-page
+        height: 100%
     &__img
       &-wrap
         width: 100%
         height: 240px
         margin-bottom: 20px
+        &_additional-page
+          height: 100%
+          margin-bottom: 0
     &__bookmark
       top: 290px
       right: 25px
+      &_additional-page
+        top: 50px
+        left: 94%
     &__divider
       margin: 0 25px
     &-extra
@@ -409,3 +597,28 @@
   .articles
     &__info
       height: 275px
+      &_additional-page
+        height: 100%
+      &-top-group
+        margin-left: 0
+        flex-direction: column
+        align-items: flex-start
+    &__title
+      &_additional-page
+        font-size: 20px
+        line-height: 45px
+    &__text
+      &_additional-page
+        font-size: 14px
+    &__link
+      &_home
+        margin-right: 20px
+      &_prev
+        margin-right: 15px
+    &__nav-menu
+      order: -1
+      margin-bottom: 25px
+    &__bookmark
+      &_additional-page
+        top: 50px
+        left: 94%
