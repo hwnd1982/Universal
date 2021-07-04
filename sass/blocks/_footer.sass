@@ -1,0 +1,297 @@
+.footer
+  &__container
+    background-color: $text-color
+  &-top
+    padding-top: 60px
+    padding-bottom: 70px
+    grid-column: span 4
+    display: flex
+    flex-direction: column
+    align-items: center
+    &__title
+      margin-top: 0
+      margin-bottom: 25px
+      text-align: center
+      font-family: Roboto Slab
+      font-style: normal
+      font-weight: bold
+      font-size: 40px
+      line-height: 50px
+      color: #262D33
+    &__form
+      width: 459px
+      display: flex
+      justify-content: space-between
+    &__input
+      width: 313px
+      padding: 10px 15px
+      padding-top: 9px
+      padding-bottom: 11px
+      padding-left: 14px
+      color: #262D33
+      background: $text-color
+      border: 1px solid #D9DADB
+      box-sizing: border-box
+      border-radius: 5px
+      &:placeholder
+        font-family: Lato
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 20px
+        color: #939699
+    &__button
+      width: 136px
+      border: none
+      padding: 10px 25px
+      font-weight: 900
+      font-size: 14px
+      line-height: 20px
+      color: $text-color
+      background: #4592FF
+      border-radius: 20px
+      cursor: pointer
+  &-menu
+    grid-column: span 4
+    width: 100%
+    display: grid
+    grid-template-columns: repeat(5, 195px) 1fr
+    padding-bottom: 64px
+    &__block
+      display: grid
+      grid-template-rows: 5px 45px repeat(5, 20px)
+      row-gap: 15px
+    &__title
+      margin-top: 15px
+      font-weight: 900
+      font-size: 14px
+      line-height: 20px
+      color: #262D33
+    &__link
+      font-size: 14px
+      line-height: 20px
+      color: #4B5157
+      text-decoration: none
+      cursor: pointer
+    &__divider
+      display: block
+      width: 100%
+      height: 1px
+      background: #D9DADB
+      &_main
+        grid-column: span 4
+      &_blue
+        height: 5px
+        background: #4592FF
+      &_bluegreen
+        height: 5px
+        background: #3BBDC4
+      &_greyblue
+        height: 5px
+        background: #6E99AE
+      &_purple
+        height: 5px
+        background: #AC8EE3
+      &_orange
+        height: 5px
+        background: #FFA34D
+      &_green
+        height: 5px
+        background: #3DC47E
+      &_red
+        height: 5px
+        background: #FF4F52
+  &-menu
+    &-bottom
+      grid-column: span 4
+      padding-top: 30px
+      padding-bottom: 29px
+      width: 100%
+      display: grid
+      grid-template-columns: min-content 486px 1fr 205px
+      column-gap: 30px
+      &__logo
+        width: 50px
+        height: 50px
+        align-self: center
+      &__links
+        display: flex
+        justify-content: space-between
+        align-items: center
+      &__link
+        font-weight: 900
+        font-size: 14px
+        line-height: 20px
+        display: flex
+        align-items: center
+        letter-spacing: 0.5px
+        text-transform: uppercase
+        color: #262D33
+        text-decoration: none
+        cursor: pointer
+      &__networks
+        grid-column: 4
+        display: flex
+        justify-content: space-between
+        align-items: center
+        &-link
+          display: flex
+          align-items: center
+          justify-content: center
+          width: 40px
+          height: 40px
+          border-radius: 50%
+          text-decoration: none
+          &_facebook
+            background: #4267B2
+          &_twitter
+            background: #1DA1F2
+          &_youtube
+            background: #FF0000
+          &_instagram
+            background: #262626
+      &__icons
+        fill: $text-color
+  &-bottom
+    grid-column: span 4
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding-top: 40px
+    padding-bottom: 55px
+    &__slogan
+      display: block
+      width: 750px
+      margin: 0
+      font-size: 14px
+      line-height: 20px
+      color: #939699
+    &__copyright
+      align-self: flex-start
+      text-align: right
+      display: block
+      width: 175px
+      font-size: 14px
+      line-height: 20px
+      color: #939699
+
+@media (max-width: 1200px)
+  .footer
+    &-menu
+      grid-template-columns: repeat(5, 160px) 1fr
+@media (max-width: 992px)
+  .footer
+    &-top
+      grid-column: span 3
+    &-menu
+      grid-column: span 3
+      grid-template-columns: repeat(2, 250px) 1fr
+      grid-template-rows: 1fr 1fr
+      &__divider
+        &_main
+          grid-column: span 3
+    &-menu
+      &-bottom
+        grid-column: span 3
+        grid-template-columns: min-content 445px 1fr 90px
+        column-gap: 25px
+        &__networks
+          height: 90px
+          flex-wrap: wrap
+          align-content: space-between
+    &-bottom
+      grid-column: span 3
+      &__slogan
+        width: 445px
+
+@media (max-width: 767px)
+  .footer
+    &-top
+      padding-top: 50px
+      padding-bottom: 60px
+      grid-column: span 2
+      &__title
+        font-size: 35px
+    &-menu
+      grid-column: span 2
+      grid-template-columns: repeat(2, 200px) 1fr
+      grid-template-rows: 1fr 1fr
+      &__divider
+        &_main
+          grid-column: span 2
+    &-menu
+      &-bottom
+        grid-column: span 2
+        grid-template-columns: min-content 1fr 1fr
+        grid-template-rows: min-content min-content
+        column-gap: 25px
+        &__links
+          grid-row: 2
+          grid-column: span 3
+        &__networks
+          max-width: 190px
+          grid-column: 2 / span 2
+          align-items: center
+          flex-wrap: nowrap
+    &-bottom
+      grid-column: span 2
+      &__slogan
+        width: 385px
+
+@media (max-width: 576px)
+  .footer
+    &-top
+      padding-top: 40px
+      padding-bottom: 50px
+      grid-column: span 1
+      &__title
+        font-size: 35px
+      &__form
+        display: flex
+        flex-direction: column
+        align-items: center
+        width: 100%
+      &__button
+        margin-top: 25px
+      &__input
+        width: 100%
+        max-width: 300px
+    &-menu
+      grid-column: span 1
+      grid-template-columns: 50% 1fr
+      grid-template-rows: 1fr 1fr 1f
+      &__block
+        &:nth-of-type(4)
+          grid-column: 2
+          grid-row: 3
+
+      &__divider
+        &_main
+          grid-column: span 1
+    &-menu
+      &-bottom
+        grid-column: span 1
+    &-bottom
+      grid-column: span 1
+      flex-direction: column
+      padding-bottom: 35px
+      &__slogan
+        width: 100%
+        margin-bottom: 25px
+
+@media (max-width: 505px)
+  .footer
+    &-menu
+      &-bottom
+        &__links
+          flex-wrap: wrap
+          height: 60px
+        &__link
+          flex-basis: 50%
+
+@media (max-width: 480px)
+  .footer
+    &-top
+      padding-bottom: 40px
+      &__title
+        font-size: 30px

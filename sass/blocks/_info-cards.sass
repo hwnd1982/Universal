@@ -65,9 +65,12 @@
       padding-bottom: 50px
     &__inner
       gap: 25px
+      grid-template-columns: repeat(2, 251px)
       grid-template-rows: repeat(6, 1fr)
     &__item
       &-article
+        &-b
+          padding: 19px 19px 25px 19px
         &-c
           grid-row: 3 / span 2
       &-tags
@@ -86,6 +89,7 @@
     &__container
       padding-bottom: 40px
     &__inner
+      grid-template-columns: 1fr
       grid-template-rows: repeat(10, min-content)
     &__item
       &_big

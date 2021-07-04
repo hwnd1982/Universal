@@ -1,0 +1,152 @@
+.modal
+  display: block
+  &.hidden
+    display: none
+  &__overlay
+    position: fixed
+    background: rgba(40, 47, 54, 0.8)
+    width: 100vw
+    height: 100vh
+    top: 0
+    bottom: 0
+    right: 0
+    left: 0
+    z-index: 99
+  &__form
+    position: relative
+    padding: 30px 35px 40px 35px
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    max-width: 360px
+    max-height: 530px
+    width: 87.5%
+    background: $text-color
+    border-radius: 10px
+    overflow: auto
+    scrollbar-width: none
+    &::-webkit-scrollbar
+      width: 0px
+      background: transparent
+  &__close
+    position: fixed
+    top: 15px
+    right: 15px
+    border: none
+    outline: none
+    cursor: pointer
+    display: flex
+    align-items: center
+    justify-content: center
+    padding: 0
+    width: 20px
+    height: 20px
+    background-color: transparent
+    &-button
+      fill: #BCBFC2
+  &__title
+    margin-top: 0
+    margin-bottom: 25px
+    font-family: Roboto Slab
+    font-weight: bold
+    font-size: 20px
+    line-height: 25px
+    color: #262D33
+  &__input
+    &-name
+      margin-bottom: 6px
+      display: block
+      font-weight: 900
+      font-size: 14px
+      line-height: 19px
+      color: #262D33
+  &__subject
+    margin-bottom: 15px
+    outline: none
+    width: 100%
+    height: 40px
+    padding: 10px 15px
+    font-size: 14px
+    line-height: 20px
+    color: #939699
+    border: 1px solid #D9DADB
+    box-sizing: border-box
+    border-radius: 5px
+    appearance: none
+    background-color: $text-color
+    background-image: url(../img/subject-button.svg)
+    background-repeat: no-repeat
+    background-position-x: 95%
+    background-position-y: center
+    &-option
+      color: #262D33
+      &:checked
+        display: none
+      &_default
+        display: none
+  &__message
+    margin-bottom: 13px
+    resize: none
+    outline: none
+    width: 100%
+    height: 120px
+    border: 1px solid #D9DADB
+    box-sizing: border-box
+    border-radius: 5px
+    background-color: $text-color
+  &__email
+    margin-bottom: 13px
+    outline: none
+    width: 100%
+    height: 40px
+    border: 1px solid #D9DADB
+    box-sizing: border-box
+    border-radius: 5px
+    background-color: $text-color
+  &__button
+    width: 122px
+    height: 40px
+    padding: 10px 25px
+    margin-top: 28px
+    font-weight: 900
+    font-size: 14px
+    line-height: 20px
+    color: $text-color
+    background: #4592FF
+    border-radius: 20px
+    border: none
+    outline: none
+    cursor: pointer
+.custom-checkbox
+  &__span
+    display: inline-flex
+    align-items: center
+    user-select: none
+    font-size: 14px
+    line-height: 20px
+    color: #4B5157
+    &:before
+      content: ''
+      margin-right: 10px
+      display: block
+      height: 20px
+      width: 20px
+      border: 1px solid #D9DADB
+      box-sizing: border-box
+      border-radius: 5px
+      background-color: $text-color
+  &__button
+    position: absolute
+    z-index: -99
+    opacity: 0
+    &:checked
+      width: 20px
+      height: 20px
+      &+.custom-checkbox
+        &__span
+          &::before
+            border-color: #4592FF
+            background-color: #4592FF
+            background-image: url(../img/check-button.svg)
+            background-repeat: no-repeat
+            background-position: center center

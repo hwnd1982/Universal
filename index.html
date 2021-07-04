@@ -13,22 +13,7 @@
     <div class="header__container container">
       <div class="header__inner inner">
         <a href="#" class="header__logo logo">
-          <div class="logo__outer">
-            <svg
-              class="logo__inner"
-              width="40"
-              height="18"
-            >
-              <use href="img/icons.svg#logo-inner"></use>
-            </svg>
-          </div>
-          <svg
-            class="logo__title"
-            width="113"
-            height="19"
-          >
-            <use href="img/icons.svg#logo-title"></use>
-          </svg>
+          <img src="img/logo.svg" alt="" class="header__logo-img">
         </a>
         <nav class="header__nav-menu nav-menu">
           <a href="#" class="nav-menu__link">Статьи</a>
@@ -38,8 +23,9 @@
           <a href="#" class="nav-menu__link">CSS</a>
           <a href="#" class="nav-menu__link">JavaScript</a>
           <a href="#" class="nav-menu__link">Web Design</a>
+          <button class="header__button">ОСТАВИТЬ ЗАЯВКУ</button>
         </nav>
-        <button class="header__button">ОСТАВИТЬ ЗАЯВКУ</button>
+        
         <div class="header__mobile-menu mobile-menu">
           <span class="header__mobile-menu-line"></span>
         </div>
@@ -775,7 +761,13 @@
         <!-- Слайдер -->
         <div class="other-cards__item other-cards__item-slider other-cards__item-full">
           <div class="other-cards__slider slider">
-            <div class="slider__button"></div>
+            <div class="slider__pagination">
+              <div class="slider__button"></div>
+              <div class="slider__button active"></div>
+              <div class="slider__button"></div>
+              <div class="slider__button"></div>
+              <div class="slider__button"></div>
+            </div>
             <!-- /.slider__button -->
             <div class="slider__wrap">
               <div class="slider__slide slide slide_first">
@@ -867,5 +859,184 @@
     <!-- /.other-cards__container -->
   </div>
   <!-- /.other-cards -->
+  <!-- Подвал -->
+  <footer class="footer">
+    <div class="footer__container container">
+      <div class="footer__inner inner">
+        <div class="footer-top">
+          <h2 class="footer-top__title">Подпишитесь на нашу рассылку</h2>
+          <form action="#" class="footer-top__form form">
+            <input type="text" class="footer-top__input input" placeholder="Email" name="email" required>
+            <button class="footer-top__button">Подписаться</button>
+          </form>
+        </div>
+        <!-- /.footer-top -->
+        <div class="footer-menu">
+          <div class="footer-menu__block">
+            <span class="footer-menu__divider footer-menu__divider_red"></span>
+            <span class="footer-menu__title">Новости</span>
+            <a href="#" class="footer-menu__link">Обновления</a>
+            <a href="#" class="footer-menu__link">Экспресс</a>
+            <a href="#" class="footer-menu__link">Politics</a>
+            <a href="#" class="footer-menu__link">Solar Eclipse</a>
+          </div>
+          <!-- /.footer-menu__block -->
+          <div class="footer-menu__block">
+            <span class="footer-menu__divider footer-menu__divider_purple"></span>
+            <span class="footer-menu__title">Статьи</span>
+            <a href="#" class="footer-menu__link">HTML</a>
+            <a href="#" class="footer-menu__link">CSS</a>
+            <a href="#" class="footer-menu__link">JavaScript</a>
+            <a href="#" class="footer-menu__link">Web Design</a>
+          </div>
+          <!-- /.footer-menu__block -->
+          <div class="footer-menu__block">
+            <span class="footer-menu__divider footer-menu__divider_blue"></span>
+            <span class="footer-menu__title">Видеоуроки</span>
+            <a href="#" class="footer-menu__link">Скринкасты</a>
+            <a href="#" class="footer-menu__link">Уроки</a>
+            <a href="#" class="footer-menu__link">Вебинары</a>
+          </div>
+          <!-- /.footer-menu__block -->
+          <div class="footer-menu__block">
+            <span class="footer-menu__divider footer-menu__divider_orange"></span>
+            <span class="footer-menu__title">Курсы</span>
+            <a href="#" class="footer-menu__link">Платные интенсивы</a>
+            <a href="#" class="footer-menu__link">Бесплатные стримы</a>
+            <a href="#" class="footer-menu__link">Мастер-классы</a>
+            <a href="#" class="footer-menu__link">Менторство</a>
+            <a href="#" class="footer-menu__link">Буткемпы</a>
+          </div>
+          <!-- /.footer-menu__block -->
+          <div class="footer-menu__block">
+            <span class="footer-menu__divider footer-menu__divider_green"></span>
+            <span class="footer-menu__title">Информация</span>
+            <a href="#" class="footer-menu__link">Политика данных</a>
+            <a href="#" class="footer-menu__link">Оферта сайта</a>
+            <a href="#" class="footer-menu__link">Реквизиты</a>
+            <a href="#" class="footer-menu__link">Контакты</a>
+          </div>
+          <!-- /.footer-menu__block -->
+          <div class="footer-menu__block">
+            <span class="footer-menu__divider footer-menu__divider_greyblue"></span>
+            <span class="footer-menu__title">Категории</span>
+            <a href="#" class="footer-menu__link">Популярное</a>
+            <a href="#" class="footer-menu__link">Горячее</a>
+            <a href="#" class="footer-menu__link">Подборки</a>
+            <a href="#" class="footer-menu__link">Мнения</a>
+            <a href="#" class="footer-menu__link">Карьера</a>
+          </div>
+          <!-- /.footer-menu__block -->
+        </div>
+        <!-- /.footer-menu -->
+        <span class="footer-menu__divider footer-menu__divider_main"></span>
+        <div class="footer-menu-bottom">
+          <a href="#" class="footer-menu-bottom__logo">
+            <img src="img/logo-icon.svg" alt="" class="footer-menu-bottom__logo-img">
+          </a>
+          <div class="footer-menu-bottom__links">
+            <a href="" class="footer-menu-bottom__link">Контакты</a>
+            <a href="" class="footer-menu-bottom__link">Работа у нас</a>
+            <a href="" class="footer-menu-bottom__link">Реклама</a>
+            <a href="" class="footer-menu-bottom__link">Обратная связь</a>
+          </div>
+          <!-- /.footer-menu-bottom__links -->
+          <div class="footer-menu-bottom__networks">
+              <!-- Facebook -->
+              <a href="https://www.facebook.com/" target="_blank" class="footer-menu-bottom__networks-link footer-menu-bottom__networks-link_facebook">
+                <svg
+                  class="footer-menu-bottom__facebook-icon footer-menu-bottom__icons"
+                  width="10"
+                  height="18"
+                >
+                  <use href="img/icons.svg#facebook-icon"></use>
+                </svg>
+              </a>
+              <!-- Twitter -->
+              <a href="https://twitter.com/" target="_blank" class="footer-menu-bottom__networks-link footer-menu-bottom__networks-link_twitter">
+                <svg
+                  class="footer-menu-bottom__twitter-icon footer-menu-bottom__icons"
+                  width="20"
+                  height="20"
+                >
+                  <use href="img/icons.svg#twitter-icon"></use>
+                </svg>
+              </a>
+              <!-- Youtube -->
+              <a href="https://www.youtube.com/" target="_blank" class="footer-menu-bottom__networks-link footer-menu-bottom__networks-link_youtube">
+                <svg
+                  class="footer-menu-bottom__youtube-icon footer-menu-bottom__icons"
+                  width="20"
+                  height="20"
+                >
+                  <use href="img/icons.svg#youtube-icon"></use>
+                </svg>
+              </a>
+              <!-- Instagram -->
+              <a href="https://www.instagram.com/" target="_blank" class="footer-menu-bottom__networks-link footer-menu-bottom__networks-link_instagram">
+                <svg
+                  class="footer-menu-bottom__instagram-icon footer-menu-bottom__icons"
+                  width="24"
+                  height="24"
+                >
+                  <use href="img/icons.svg#instagram-icon"></use>
+                </svg>
+              </a>
+            </div>
+            <!-- /.footer-menu-bottom__networks -->
+        </div>
+        <!-- /.footer-menu-bottom -->
+        <span class="footer-menu__divider footer-menu__divider_main"></span>
+        <div class="footer-bottom">
+          <p class="footer-bottom__slogan">
+            Universal — это онлайн издание, в котором мы публикуем полезные материалы о веб разработке: статьи,
+            новости, видеоуроки, подборки, ссылки и курсы. Материалы на сайте бесплатны, но при копировании,
+            указывайте ссылку.
+          </p>
+          <span class="footer-bottom__copyright">© 2020 Universal Magazine</span>
+        </div>
+        <!-- /.footer-bottom -->
+      </div>
+      <!-- /.footer__inner -->
+    </div>
+    <!-- /.footer__container -->
+  </footer>
+  <div class="modal hidden">
+    <div class="modal__overlay">
+      <form action="#" class="modal__form form">
+        <button class="modal__close">
+          <svg
+            class="modal__close-button"
+            width="16"
+            height="16"
+          >
+            <use href="img/icons.svg#close-button"></use>
+          </svg>
+        </button>
+        <h3 class="modal__title">Обратная связь</h3>
+        <span class="modal__input-name">Тема</span>
+        <select name="subject" class="modal__subject input">
+          <option class="modal__subject-option modal__subject-option_default" value="" selected="selected" disabled>Выберите тему</option>
+          <option class="modal__subject-option" value="Статьи">Статья</option>
+          <option class="modal__subject-option" value="Новости">Новость</option>
+          <option class="modal__subject-option" value="CSS">Мнение</option>
+          <option class="modal__subject-option" value="CSS">CSS</option>
+          <option class="modal__subject-option" value="JavaScript">JavaScript</option>
+          <option class="modal__subject-option" value="Web Design">Web Design</option>
+        </select>
+        <span class="modal__input-name">Сообщение</span>
+        <textarea name="message" cols="30" rows="10" class="modal__message" required></textarea>
+        <span class="modal__input-name">Email</span>
+        <input type="email" class="modal__email" required>
+        <label class="modal__custom-checkbox custom-checkbox" for="checkbox">
+          <input class="custom-checkbox__button" type="checkbox" id="checkbox" required>
+          <span class="custom-checkbox__span">Согласен с обработкой данных</span>
+        </label>
+        <button class="modal__button">Отправить</button>
+      </form>
+    </div>
+    <!-- /.modal__overlay -->
+  </div>
+  <!-- /.mobile-menu -->
 </body>
 </html>

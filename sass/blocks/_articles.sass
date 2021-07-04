@@ -252,30 +252,26 @@
       padding: 50px 0
     &__main
       grid-column: span 2
-      width: 567px
+      width: 527px
     &__item
-      grid-template-columns: 220px 280px
-      padding: 25px
+      grid-template-columns: 220px 262px
     &__title
       font-size: 16px
       line-height: 20px
     &__info
-      width: 280px
+      width: 262px
     &__img
       &-wrap
         width: 220px
         height: 240px
-    &__bookmark
-      right: 25px
-    &__divider
-      margin: 0 25px
     &-extra
       &__additional
         grid-column: span 2
-        width: 567px
+        width: 527px
         grid-template-rows: min-content repeat(3, 1px 94px) 1px min-content
         grid-template-columns: 1fr 1px 1fr
       &__block
+        padding: 0 15px
         &:nth-of-type(1), &:nth-of-type(3), &:nth-of-type(5)
           grid-column: 1
         &:nth-of-type(2), &:nth-of-type(4), &:nth-of-type(6)
@@ -329,6 +325,7 @@
     &__item
       grid-template-columns: 1fr
       grid-template-rows: min-content min-content
+      padding: 25px
     &__info
       width: 100%
       height: 240px
@@ -339,6 +336,9 @@
         margin-bottom: 20px
     &__bookmark
       top: 290px
+      right: 25px
+    &__divider
+      margin: 0 25px
     &-extra
       &__additional
         grid-column: span 1
@@ -346,6 +346,7 @@
         grid-template-columns: 1fr
         grid-template-rows: min-content repeat(7, 1px 94px) 1px min-content
       &__block
+        padding: 0 25px
         &:nth-of-type(1)
           grid-column: 1
         &:nth-of-type(2)
@@ -407,4 +408,4 @@
 @media (max-width: 430px)
   .articles
     &__info
-      height: 300px
+      height: 275px

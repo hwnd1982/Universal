@@ -44,25 +44,6 @@
         background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35))
   &__author-info
     margin-bottom: 145px
-  // &__section
-  //   display: block
-  //   font-weight: 900
-  //   font-size: 12px
-  //   line-height: 15px
-  //   letter-spacing: 0.5px
-  //   text-transform: uppercase
-  //   &_blue
-  //     color: #4592FF
-  //   &_bluegreen
-  //     color: #3BBDC4
-  //   &_greyblue
-  //     color: #6E99AE
-  //   &_purple
-  //     color: #AC8EE3
-  //   &_orange
-  //     color: #FFA34D
-  //   &_green
-  //     color: #3DC47E
   &__title
     margin-top: 20px
     margin-bottom: 50px
@@ -73,7 +54,7 @@
     line-height: 50px
   &__tab
     height: 99px
-    padding: 17px 25px 19px
+    padding: 19px 25px 19px
     cursor: pointer
     text-overflow: ellipsis
     overflow: hidden
@@ -169,23 +150,31 @@
     &__container
       grid-template-rows: 355px 70px
     &__inner
-      grid-template-rows: 1fr 130px
+      grid-template-rows: 1fr 135px
+    &__title
+      margin-top: 20px
+      margin-bottom: 20px
+      text-align: center
+      font-size: 25px
+      line-height: 30px
     &__rubric
       width: 20px
     &__tab
-      width: 107px
-      height: 130px
+      width: 99px
+      height: 135px
+      &:last-of-type
+        width: 102px
     &__divider
       height: 130px
 
 @media (max-width: 576px)
   .hero
     &__container
-      grid-template-rows: 450px 1fr
+      grid-template-rows: 468px 1fr
     &__inner
       grid-template-rows: 1fr
     &__content
-      padding: 18px
+      padding: 25px
       grid-template-columns: 1fr
       grid-template-rows: repeat(4, min-content)
     &__author-info
@@ -207,14 +196,18 @@
       text-align: left
       transform: none
       margin: 5px 0
-      padding: 0 7px
+      padding: 0 25px
     &__tabs
       flex-direction: column
       padding-bottom: 5px
     &__tab
       width: 100%
       height: 60px
-      padding: 7px 7px
+      padding: 7px 25px
+      &:last-of-type
+        width: 100%
+        height: 60px
+        padding: 7px 25px
     &__divider
       width: 100%
       height: 1px

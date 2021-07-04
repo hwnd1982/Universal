@@ -1,4 +1,25 @@
 .slider
+  position: relative
   &__wrap
     width: 100%
     height: 100%
+  &__pagination
+    display: flex
+    justify-content: space-between
+    align-items: center
+    position: absolute
+    bottom: 40px
+    left: 50%
+    transform: translate(-50%, 0)
+    width: 108px
+    height: 20px
+    z-index: 5
+  &__button
+    border-radius: 50%
+    width: 8px
+    height: 8px
+    background: #D9DADB
+    opacity: 0.4
+    &.active
+      background: $text-color
+      opacity: 1
