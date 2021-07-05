@@ -1718,6 +1718,7 @@ template {
   line-height: 20px;
   color: #ffffff;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .card-content-article-d__button-icon {
@@ -2133,6 +2134,7 @@ template {
   line-height: 20px;
   color: #ffffff;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .article-banner__button-icon {
