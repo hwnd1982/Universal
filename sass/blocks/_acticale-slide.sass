@@ -1,0 +1,65 @@
+.acticale-slide
+  &__img
+    position: absolute
+    width: 100%
+    height: 100%
+    object-fit: cover
+    top: 0
+    left: 0
+    z-index: -1
+
+.acticale-slide-caption
+  display: grid
+  grid-template-columns: 1fr 1px 262px
+  height: 70px
+  &__span
+    display: block
+    font-size: 14px
+    line-height: 21px
+    padding: 0 35px
+    align-self: center
+  &__divider
+    display: block
+    height: 100%
+    width: 1px
+    background: #D9DADB
+  &__author
+    align-self: center
+    display: flex
+    align-items: center
+    margin-left: 30px
+    &-avatar
+      width: 45px
+      height: 45px
+      border-radius: 50%
+    &-info
+      display: flex
+      flex-direction: column
+      margin-left: 10px
+    &-name
+      font-size: 14px
+      line-height: 20px
+    &-profession
+      font-size: 12px
+      line-height: 15px
+      color: #939699
+
+@media (max-width: 767px)
+  .acticale-slide-caption
+    grid-template-columns: 1fr
+    grid-template-rows: 70px 1px 70px
+    height: 140px
+    &__divider
+      height: 1px
+      width: 100%
+    &__span
+      grid-row: 3
+    &__author
+      grid-row: 1
+
+@media (max-width: 450px)
+  .acticale-slide-caption
+    &__span
+      padding: 0 25px
+      font-size: 12px
+      line-height: 18px

@@ -1,0 +1,170 @@
+.article-begin
+  &__inner
+    grid-template-columns: 1fr 946px 1fr
+    gap: 0
+    padding-top: 60px
+  &__indention
+    position: relative
+    grid-column: 2
+    display: grid
+    grid-template-columns: 622px 264px
+    column-gap: 60px
+  &__text
+    grid-column: 1
+    font-size: 18px
+    line-height: 30px
+    margin: 15px 0
+    &_first
+      margin-top: 0
+      &::first-letter
+        float: left
+        width: 96px
+        margin-left: -7px
+        margin-right: 10px
+        padding-top: 8px
+        font-weight: 800
+        font-size: 100px
+        line-height: 75px
+        text-align: center
+        color: #4592FF
+  &__title
+    margin-bottom: 12px
+    grid-column: 1
+    font-family: Roboto Slab
+    font-style: normal
+    font-weight: bold
+    font-size: 25px
+    line-height: 30px
+    color: #262D33
+
+.card-author
+  grid-column: 2
+  height: 296px
+  display: flex
+  flex-direction: column
+  align-items: center
+  background-color: $text-color
+  border: 1px solid #D9DADB
+  box-sizing: border-box
+  border-radius: 10px
+  transform: translate(0, -160px)
+  padding-top: 35px
+  &__avatar
+    width: 90px
+    height: 90px
+    border-radius: 50%
+    object-fit: cover
+  &__info-group
+    display: flex
+    flex-direction: column
+  &__name
+    margin-top: 15px
+    margin-bottom: 5px
+    font-family: Roboto Slab
+    font-weight: bold
+    font-size: 20px
+    line-height: 25px
+    color: #262D33
+  &__profession
+    font-size: 14px
+    line-height: 20px
+  &__articles-count
+    margin-top: 15px
+    font-weight: 900
+    font-size: 14px
+    line-height: 20px
+    color: #262D33
+  &__divider
+    display: block
+    height: 1px
+    width: 100%
+    margin-top: 20px
+    margin-bottom: 15px
+    background: #D9DADB
+  &__site
+    text-decoration: none
+    font-weight: 900
+    font-size: 14px
+    line-height: 20px
+    color: #262D33
+
+@media (max-width: 1200px)
+  .article-begin
+    &__inner
+      grid-template-columns: 1fr 765px 1fr
+    &__indention
+      grid-template-columns: 515px 210px
+      column-gap: 40px
+
+@media (max-width: 992px)
+  .article-begin
+    &__inner
+      grid-template-columns: 1fr 590px 1fr
+      padding-top: 40px
+    &__indention
+      grid-template-columns: 1fr
+    &__text
+      font-size: 14px
+      line-height: 25px
+      &_first
+        width: 350px
+        justify-self: end
+        &::first-letter
+          padding-top: 10px
+          font-size: 86px
+          line-height: 50px
+  .card-author
+    grid-column: 1
+    width: 210px
+    transform: translate(0, 0)
+    position: absolute
+
+@media (max-width: 767px)
+  .article-begin
+    &__inner
+      grid-template-columns: 527px
+    &__indention
+      grid-column: 1
+    &__text
+      font-size: 14px
+      line-height: 25px
+      &_first
+        width: 100%
+        justify-self: start
+        margin-top: -40px
+
+  .card-author
+    padding: 0
+    grid-column: 1
+    grid-row: 1
+    transform: translate(0, -70px)
+    position: relative
+    display: grid
+    grid-template-columns: 90px 1fr
+    column-gap: 25px
+    height: 100%
+    max-width: 280px
+    width: 100%
+    &__avatar
+      margin-top: 10px
+      margin-bottom: 10px
+      margin-left: 10px
+      width: 70px
+      height: 70px
+    &__divider
+      grid-column: span 2
+      margin-top: 0
+    &__site
+      grid-column: span 2
+      text-align: center
+      width: 100%
+      margin-bottom: 10px
+
+@media (max-width: 576px)
+  .article-begin
+    &__inner
+      grid-template-columns: 1fr
+    &__text
+      margin: 5px 0
+      &_first
+        margin-top: 0
