@@ -1,0 +1,48 @@
+.articales-cards
+  &__container
+    background: #F5F5F5
+    padding-top: 60px
+    padding-bottom: 90px
+  &__item
+    display: grid
+  &__img
+    width: 100%
+    border-radius: 10px
+    height: 180px
+    object-fit: cover
+  &__title
+    margin-top: 13px
+    font-family: Roboto Slab
+    font-style: normal
+    font-weight: bold
+    font-size: 16px
+    line-height: 25px
+    color: #262D33
+  &__info
+    display: flex
+    align-items: center
+  &__icons
+    fill: #BCBFC2
+    margin-right: 5px
+  &__counters
+    font-size: 12px
+    line-height: 15px
+    color: #939699
+  &__comment-icon
+    margin-left: 10px
+
+@media (max-width: 992px)
+  .articales-cards
+    &__inner
+      grid-template-columns: 1fr 1fr
+      gap: 25px
+
+@media (max-width: 767px)
+  .articales-cards
+    &__container
+      padding-bottom: 50px
+
+@media (max-width: 576px)
+  .articales-cards
+    &__inner
+      grid-template-columns: 1fr
