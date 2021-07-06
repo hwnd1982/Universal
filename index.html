@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Universal</title>
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js"></script>
+  <script src="js/modal.js" defer></script>
+  <script src="js/mobile-menu.js" defer></script>
 </head>
 <body class="body">
   <!-- Header -->
@@ -23,7 +26,7 @@
           <a href="#" class="nav-menu__link">CSS</a>
           <a href="#" class="nav-menu__link">JavaScript</a>
           <a href="#" class="nav-menu__link">Web Design</a>
-          <button class="header__button">ОСТАВИТЬ ЗАЯВКУ</button>
+          <button class="header__button modal-button">ОСТАВИТЬ ЗАЯВКУ</button>
         </nav>
         
         <div class="header__mobile-menu mobile-menu">
@@ -51,7 +54,7 @@
           <!-- /.hero__author-info -->
           <span class="hero__section section section_blue">Javascript</span>
           <h1 class="hero__title">Расширение Chrome защищает от атак</h1>
-          <a href="../articales/main-article.html" class="hero__button">
+          <a href="https://sibertools.ru/universal/articales/main-article.html" class="hero__button">
             Читать далее
             <svg
               class="hero__button-icon"
@@ -363,7 +366,7 @@
     <div class="article-banner__container container">
       <div class="article-banner__inner inner">
         <h2 class="article-banner__title">Расследование недели: сколько зарабатывает веб разработчик в Москве</h2>
-        <a href="../articales/main-article.html" class="article-banner__button">
+        <a href="https://sibertools.ru/universal/articales/main-article.html" class="article-banner__button">
             Читать далее
             <svg
               class="article-banner__button-icon"
@@ -808,7 +811,7 @@
               <h3 class="card-content-article-d__title">Вопросы на собеседовании для джуна</h3>
               <p class="card-content-article-d__text">Каверзные и не очень вопросы, которых боятся новички, когда
                 идут на собеседование</p>
-              <a href="../articales/main-article.html" class="card-content-article-d__button">
+              <a href="https://sibertools.ru/universal/articales/main-article.html" class="card-content-article-d__button">
                 Читать далее
                 <svg
                   class="card-content-article-d__button-icon"
@@ -865,7 +868,7 @@
       <div class="footer__inner inner">
         <div class="footer-top">
           <h2 class="footer-top__title">Подпишитесь на нашу рассылку</h2>
-          <form action="#" class="footer-top__form form">
+          <form action="send.php" method="POST" class="footer-top__form form">
             <input type="text" class="footer-top__input input" placeholder="Email" name="email" required>
             <button class="footer-top__button">Подписаться</button>
           </form>
@@ -935,10 +938,10 @@
             <img src="img/logo-icon.svg" alt="" class="footer-menu-bottom__logo-img">
           </a>
           <div class="footer-menu-bottom__links">
-            <a href="" class="footer-menu-bottom__link">Контакты</a>
-            <a href="" class="footer-menu-bottom__link">Работа у нас</a>
-            <a href="" class="footer-menu-bottom__link">Реклама</a>
-            <a href="" class="footer-menu-bottom__link">Обратная связь</a>
+            <a href="#" class="footer-menu-bottom__link">Контакты</a>
+            <a href="#" class="footer-menu-bottom__link">Работа у нас</a>
+            <a href="#" class="footer-menu-bottom__link">Реклама</a>
+            <button class="footer-menu-bottom__link modal-button">Обратная связь</button>
           </div>
           <!-- /.footer-menu-bottom__links -->
           <div class="footer-menu-bottom__networks">
@@ -1003,8 +1006,8 @@
   </footer>
   <div class="modal hidden">
     <div class="modal__overlay">
-      <form action="#" class="modal__form form">
-        <button class="modal__close">
+      <form action="send.php" method="POST" class="modal__form form">
+        <div class="modal__close">
           <svg
             class="modal__close-button"
             width="16"
@@ -1012,10 +1015,10 @@
           >
             <use href="img/icons.svg#close-button"></use>
           </svg>
-        </button>
+        </div>
         <h3 class="modal__title">Обратная связь</h3>
         <span class="modal__input-name">Тема</span>
-        <select name="subject" class="modal__subject input">
+        <select name="subject" class="modal__subject input" name="subject" required>
           <option class="modal__subject-option modal__subject-option_default" value="" selected="selected" disabled>Выберите тему</option>
           <option class="modal__subject-option" value="Статьи">Статья</option>
           <option class="modal__subject-option" value="Новости">Новость</option>
@@ -1027,7 +1030,7 @@
         <span class="modal__input-name">Сообщение</span>
         <textarea name="message" cols="30" rows="10" class="modal__message" required></textarea>
         <span class="modal__input-name">Email</span>
-        <input type="email" class="modal__email" required>
+        <input name="email"  type="email" class="modal__email" required>
         <label class="modal__custom-checkbox custom-checkbox" for="checkbox">
           <input class="custom-checkbox__button" type="checkbox" id="checkbox" required>
           <span class="custom-checkbox__span">Согласен с обработкой данных</span>

@@ -387,6 +387,10 @@ template {
   color: #4B5157;
 }
 
+.body.lock {
+  overflow: hidden;
+}
+
 .container {
   display: -ms-grid;
   display: grid;
@@ -3524,6 +3528,7 @@ template {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 5px;
+  outline: none;
 }
 
 .footer-top__input:placeholder {
@@ -3681,6 +3686,9 @@ template {
   color: #262D33;
   text-decoration: none;
   cursor: pointer;
+  padding: 0;
+  border: none;
+  background-color: #ffffff;
 }
 
 .footer-menu-bottom__networks {
@@ -3978,6 +3986,7 @@ template {
           transform: translate(-50%, -50%);
   max-width: 360px;
   max-height: 530px;
+  height: 90%;
   width: 87.5%;
   background: #ffffff;
   border-radius: 10px;
@@ -4157,6 +4166,12 @@ template {
   background-image: url(../img/check-button.svg);
   background-repeat: no-repeat;
   background-position: center center;
+}
+
+@media (max-width: 360px) {
+  .custom-checkbox__span {
+    font-size: 12px;
+  }
 }
 
 .article-begin__inner, .article-continuation__inner {
@@ -5282,6 +5297,14 @@ template {
   font-size: 20px;
   line-height: 25px;
   color: #262D33;
+}
+
+.comments__form-subject {
+  width: 0;
+  height: 0;
+  left: -50px;
+  position: absolute;
+  opacity: 0;
 }
 
 .comments__form-input {

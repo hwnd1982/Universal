@@ -20,6 +20,7 @@
     transform: translate(-50%, -50%)
     max-width: 360px
     max-height: 530px
+    height: 90%
     width: 87.5%
     background: $text-color
     border-radius: 10px
@@ -150,3 +151,8 @@
             background-image: url(../img/check-button.svg)
             background-repeat: no-repeat
             background-position: center center
+
+@media (max-width: 360px)
+  .custom-checkbox
+    &__span
+      font-size: 12px
