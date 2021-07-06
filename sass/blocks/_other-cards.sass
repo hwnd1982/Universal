@@ -21,6 +21,16 @@
     &-article
       &-d
         background: #B4D1E0
+  &__slide
+    &.displayed
+      display: flex
+      transform: translate(0, 0)
+    &.next
+      display: flex
+      transform: translate(100%, 0)
+    &.prev
+      display: flex
+      transform: translate(-100%, 0)
 
 @media (max-width: 1200px)
   .other-cards

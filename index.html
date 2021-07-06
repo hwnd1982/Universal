@@ -6,9 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Universal</title>
   <link rel="stylesheet" href="css/style.css">
-  <script src="js/main.js"></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/validator.js" defer></script>
   <script src="js/modal.js" defer></script>
   <script src="js/mobile-menu.js" defer></script>
+  <script src="js/slider.js" defer></script>
+  <script src="js/slider-pagination.js" defer></script>
 </head>
 <body class="body">
   <!-- Header -->
@@ -765,15 +768,116 @@
         <div class="other-cards__item other-cards__item-slider other-cards__item-full">
           <div class="other-cards__slider slider">
             <div class="slider__pagination">
-              <div class="slider__button"></div>
-              <div class="slider__button active"></div>
-              <div class="slider__button"></div>
-              <div class="slider__button"></div>
-              <div class="slider__button"></div>
+              <div class="slider__button" id="0"></div>
+              <div class="slider__button active" id="1"></div>
+              <div class="slider__button" id="2"></div>
+              <div class="slider__button" id="3"></div>
+              <div class="slider__button" id="4"></div>
             </div>
             <!-- /.slider__button -->
             <div class="slider__wrap">
-              <div class="slider__slide slide slide_first">
+              <!-- Слайд 1 -->
+              <div class="other-cards__slide slider__slide slide slide_first">
+                <span class="slide__label">Горячее</span>
+                <a href="#" class="slide__author-info">
+                  <img src="img/oksanaPushkina.png" alt="Аватар: Оксана Пушкина" class="slide__avatar">
+                  <div class="slide__spans">
+                    <span class="slide__name">Оксана Пушкина</span>
+                    <span class="slide__profession">Фотограф</span>
+                  </div>
+                  <!-- /.author-info__spans -->
+                </a>
+                <h2 class="slide__title">Выбор читателей: где удобнее работать фрилансеру</h2>
+                <button class="slide__button">
+                  <svg
+                    class="slide__button-icon"
+                    width="21"
+                    height="20"
+                  >
+                    <use href="img/icons.svg#photos"></use>
+                  </svg>
+                  Смотреть фото
+                  <span class="slide__photos-count">26</span>
+                </button>
+              </div>
+              <!-- /.slider__slide -->
+              <!-- Слайд 2 -->
+              <div class="other-cards__slide slider__slide slide slide_second">
+                <span class="slide__label">Горячее</span>
+                <a href="#" class="slide__author-info">
+                  <img src="img/oksanaPushkina.png" alt="Аватар: Оксана Пушкина" class="slide__avatar">
+                  <div class="slide__spans">
+                    <span class="slide__name">Оксана Пушкина</span>
+                    <span class="slide__profession">Фотограф</span>
+                  </div>
+                  <!-- /.author-info__spans -->
+                </a>
+                <h2 class="slide__title">Выбор читателей: где удобнее работать фрилансеру</h2>
+                <button class="slide__button">
+                  <svg
+                    class="slide__button-icon"
+                    width="21"
+                    height="20"
+                  >
+                    <use href="img/icons.svg#photos"></use>
+                  </svg>
+                  Смотреть фото
+                  <span class="slide__photos-count">26</span>
+                </button>
+              </div>
+              <!-- /.slider__slide -->
+              <!-- Слайд 3 -->
+              <div class="other-cards__slide slider__slide slide slide_third">
+                <span class="slide__label">Горячее</span>
+                <a href="#" class="slide__author-info">
+                  <img src="img/oksanaPushkina.png" alt="Аватар: Оксана Пушкина" class="slide__avatar">
+                  <div class="slide__spans">
+                    <span class="slide__name">Оксана Пушкина</span>
+                    <span class="slide__profession">Фотограф</span>
+                  </div>
+                  <!-- /.author-info__spans -->
+                </a>
+                <h2 class="slide__title">Выбор читателей: где удобнее работать фрилансеру</h2>
+                <button class="slide__button">
+                  <svg
+                    class="slide__button-icon"
+                    width="21"
+                    height="20"
+                  >
+                    <use href="img/icons.svg#photos"></use>
+                  </svg>
+                  Смотреть фото
+                  <span class="slide__photos-count">26</span>
+                </button>
+              </div>
+              <!-- /.slider__slide -->
+              <!-- Слайд 4 -->
+              <div class="other-cards__slide slider__slide slide slide_fourth">
+                <span class="slide__label">Горячее</span>
+                <a href="#" class="slide__author-info">
+                  <img src="img/oksanaPushkina.png" alt="Аватар: Оксана Пушкина" class="slide__avatar">
+                  <div class="slide__spans">
+                    <span class="slide__name">Оксана Пушкина</span>
+                    <span class="slide__profession">Фотограф</span>
+                  </div>
+                  <!-- /.author-info__spans -->
+                </a>
+                <h2 class="slide__title">Выбор читателей: где удобнее работать фрилансеру</h2>
+                <button class="slide__button">
+                  <svg
+                    class="slide__button-icon"
+                    width="21"
+                    height="20"
+                  >
+                    <use href="img/icons.svg#photos"></use>
+                  </svg>
+                  Смотреть фото
+                  <span class="slide__photos-count">26</span>
+                </button>
+              </div>
+              <!-- /.slider__slide -->
+              <!-- Слайд 5 -->
+              <div class="other-cards__slide slider__slide slide slide_fifth">
                 <span class="slide__label">Горячее</span>
                 <a href="#" class="slide__author-info">
                   <img src="img/oksanaPushkina.png" alt="Аватар: Оксана Пушкина" class="slide__avatar">
@@ -870,7 +974,7 @@
           <h2 class="footer-top__title">Подпишитесь на нашу рассылку</h2>
           <form action="send.php" method="POST" class="footer-top__form form">
             <input type="text" class="footer-top__input input" placeholder="Email" name="email" required>
-            <button class="footer-top__button">Подписаться</button>
+            <button class="footer-top__button button">Подписаться</button>
           </form>
         </div>
         <!-- /.footer-top -->
@@ -1018,6 +1122,8 @@
         </div>
         <h3 class="modal__title">Обратная связь</h3>
         <span class="modal__input-name">Тема</span>
+        
+        <div class="modal__input-warp">
         <select name="subject" class="modal__subject input" name="subject" required>
           <option class="modal__subject-option modal__subject-option_default" value="" selected="selected" disabled>Выберите тему</option>
           <option class="modal__subject-option" value="Статьи">Статья</option>
@@ -1027,15 +1133,29 @@
           <option class="modal__subject-option" value="JavaScript">JavaScript</option>
           <option class="modal__subject-option" value="Web Design">Web Design</option>
         </select>
+        <label class="modal__error error" for="subject"></label>
+        </div>
+
         <span class="modal__input-name">Сообщение</span>
-        <textarea name="message" cols="30" rows="10" class="modal__message" required></textarea>
+        <div class="modal__input-warp">
+          <textarea name="message" cols="30" rows="10" class="modal__message input" required></textarea>
+          <label class="modal__error error" for="message"></label>
+        </div>
+
         <span class="modal__input-name">Email</span>
-        <input name="email"  type="email" class="modal__email" required>
-        <label class="modal__custom-checkbox custom-checkbox" for="checkbox">
-          <input class="custom-checkbox__button" type="checkbox" id="checkbox" required>
-          <span class="custom-checkbox__span">Согласен с обработкой данных</span>
+        <div class="modal__input-warp">
+          <input name="email"  type="email" class="modal__email input" required>
+          <label class="modal__error error" for="email"></label>
+        </div>
+        
+   
+        <label class="modal__custom-checkbox custom-checkbox modal__input-warp" for="checkbox">
+          <input name="permission" class="custom-checkbox__button input" type="checkbox" id="checkbox" required>
+          <span class="custom-checkbox__span error">Согласен с обработкой данных</span>
         </label>
-        <button class="modal__button">Отправить</button>
+   
+
+        <button class="modal__button button">Отправить</button>
       </form>
     </div>
     <!-- /.modal__overlay -->

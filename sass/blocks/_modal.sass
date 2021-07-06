@@ -5,14 +5,15 @@
   &__overlay
     position: fixed
     background: rgba(40, 47, 54, 0.8)
-    width: 100vw
-    height: 100vh
+    width: 100%
+    height: 100%
     top: 0
     bottom: 0
     right: 0
     left: 0
     z-index: 99
   &__form
+    min-width: 280px
     position: relative
     padding: 30px 35px 40px 35px
     top: 50%
@@ -118,6 +119,9 @@
     border: none
     outline: none
     cursor: pointer
+  &__input-warp
+    position: relative
+
 .custom-checkbox
   &__span
     display: inline-flex
@@ -126,6 +130,13 @@
     font-size: 14px
     line-height: 20px
     color: #4B5157
+    &.invalid
+      display: flex
+      position: static
+      font-size: 14px
+      border-radius: 0
+      border: none
+
     &:before
       content: ''
       margin-right: 10px
@@ -156,3 +167,9 @@
   .custom-checkbox
     &__span
       font-size: 12px
+      &.invalid
+        display: flex
+        position: static
+        font-size: 12px
+        border-radius: 0
+        border: none

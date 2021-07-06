@@ -19,15 +19,15 @@ if (isset($_POST['email']) && !isset($_POST['message']) ) {
   <h2>Подписка на рассылку</h2>
   <b>Электронная почта:</b> $email
   ";
-  $location = 'Location: newsletter.php';
+  $location = 'Location: index.html';
 } else {
   // Комментарий
   if (!isset($_POST['email'])) {
     // Формирование самого письма
     $title = "Новый комментарий на портале Universal";
     $body = "
-    <h2>Статья: $subject</h2>
-    <b>Сообщение:</b><br>$message
+    <h3>Статья: <i>$subject<i></h3>
+    <b>Комментарий:</b><br><i>$message<i>
     ";
   } else {
     // Форма
@@ -37,33 +37,9 @@ if (isset($_POST['email']) && !isset($_POST['message']) ) {
     <b>Сообщение:</b><br>$message<br><br>
     <b>Почта для обратной связи:</b> $email
     ";
-    
   }
+  $location = 'Location: index.html';
 }
-
-if (isset($_POST['message']) && isset($_POST['subject'])) {
-  // Формирование самого письма
-  if (isset($_POST['email'])) {
-    $title = "Новое обращение Best Tour Plan";
-    $body = "
-    <h2>Новое обращение</h2>
-    <b>Имя пользователя:</b> $name<br>
-    <b>Телефон:</b> $phone<br>
-    <b>Электронная почта:</b> $email<br><br>
-    <b>Сообщение:</b><br>$message
-    ";
-  } else {
-    $title = "Новое обращение Best Tour Plan";
-    $body = "
-    <h2>Новое обращение</h2>
-    <b>Имя пользователя:</b> $name<br>
-    <b>Телефон:</b> $phone<br><br>
-    <b>Сообщение:</b><br>$message
-    ";
-  }
-  $location = 'Location: thankyou.php';
-}
-
 
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
