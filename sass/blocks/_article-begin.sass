@@ -410,3 +410,34 @@
       width: 100%
     &__link
       margin-top: 25px
+
+@media (min-width: 992px)
+  .article-continuation
+    &__button-like
+      transition: all 0.3s ease-in-out
+      &:hover
+        transform: scale(1.03)
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3)
+    &__link
+      transition: all 0.3s ease-in-out
+      &:hover
+        transform: scale(1.03)
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3)
+    &__tag
+      transition: all 0.3s ease-in-out
+      &:hover
+        transform: scale(1.05)
+        text-shadow: 0 3px 10px rgba(0, 0, 0, 0.3)
+  .card-author
+    &__site
+      position: relative
+      &::after
+        background-color: #262D33
+        display: block
+        content: ''
+        height: 1px
+        width: 0
+        transition: all 0.3s ease-in-out
+      &:hover, &:focus
+        &::after
+          width: 100%

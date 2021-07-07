@@ -630,3 +630,15 @@
       transition: all 0.3s ease-in-out
       &:hover
         transform: scale(1.1)
+    &__link
+      position: relative
+      &::after
+        background-color: $text-color
+        display: block
+        content: ''
+        height: 1px
+        width: 0
+        transition: all 0.3s ease-in-out
+      &:hover, &:focus
+        &::after
+          width: 100%
