@@ -12,6 +12,7 @@
   <script src="js/mobile-menu.js" defer></script>
   <script src="js/slider.js" defer></script>
   <script src="js/slider-pagination.js" defer></script>
+  <script src="js/tabs.js" defer></script>
 </head>
 <body class="body">
   <!-- Header -->
@@ -45,7 +46,8 @@
   <section class="hero">
     <div class="hero__container container">
       <div class="hero__inner inner">
-        <div class="hero__content hero__content_first">
+        <!-- Вкладка 1 -->
+        <div class="hero__content hero__content_first first active">
           <a href="#" class="hero__author-info author-info">
             <img src="img/davidGurov.png" alt="Аватар: Давид Гуров" class="author-info__avatar">
             <div class="author-info__spans">
@@ -69,34 +71,134 @@
           </a>
         </div>
         <!-- /.hero__content -->
+        <!-- Вкладка 2 -->
+        <div class="hero__content hero__content_second second">
+          <a href="#" class="hero__author-info author-info">
+            <img src="img/davidGurov.png" alt="Аватар: Давид Гуров" class="author-info__avatar">
+            <div class="author-info__spans">
+              <span class="author-info__name">Давид Гуров</span>
+              <span class="author-info__profession">Разработчик</span>
+            </div>
+            <!-- /.author-info__spans -->
+          </a>
+          <!-- /.hero__author-info -->
+          <span class="hero__section section section_blue">Javascript</span>
+          <h1 class="hero__title">Расширение Chrome защищает от атак</h1>
+          <a href="https://sibertools.ru/universal/articales/main-article.html" class="hero__button">
+            Читать далее
+            <svg
+              class="hero__button-icon"
+              width="15"
+              height="7"
+            >
+              <use href="img/icons.svg#button-arrow"></use>
+            </svg>
+          </a>
+        </div>
+        <!-- /.hero__content -->
+        <!-- Вкладка 3 -->
+        <div class="hero__content hero__content_third third">
+          <a href="#" class="hero__author-info author-info">
+            <img src="img/davidGurov.png" alt="Аватар: Давид Гуров" class="author-info__avatar">
+            <div class="author-info__spans">
+              <span class="author-info__name">Давид Гуров</span>
+              <span class="author-info__profession">Разработчик</span>
+            </div>
+            <!-- /.author-info__spans -->
+          </a>
+          <!-- /.hero__author-info -->
+          <span class="hero__section section section_blue">Javascript</span>
+          <h1 class="hero__title">Расширение Chrome защищает от атак</h1>
+          <a href="https://sibertools.ru/universal/articales/main-article.html" class="hero__button">
+            Читать далее
+            <svg
+              class="hero__button-icon"
+              width="15"
+              height="7"
+            >
+              <use href="img/icons.svg#button-arrow"></use>
+            </svg>
+          </a>
+        </div>
+        <!-- /.hero__content -->
+        <!-- Вкладка 4 -->
+        <div class="hero__content hero__content_fourth fourth">
+          <a href="#" class="hero__author-info author-info">
+            <img src="img/davidGurov.png" alt="Аватар: Давид Гуров" class="author-info__avatar">
+            <div class="author-info__spans">
+              <span class="author-info__name">Давид Гуров</span>
+              <span class="author-info__profession">Разработчик</span>
+            </div>
+            <!-- /.author-info__spans -->
+          </a>
+          <!-- /.hero__author-info -->
+          <span class="hero__section section section_blue">Javascript</span>
+          <h1 class="hero__title">Расширение Chrome защищает от атак</h1>
+          <a href="https://sibertools.ru/universal/articales/main-article.html" class="hero__button">
+            Читать далее
+            <svg
+              class="hero__button-icon"
+              width="15"
+              height="7"
+            >
+              <use href="img/icons.svg#button-arrow"></use>
+            </svg>
+          </a>
+        </div>
+        <!-- /.hero__content -->
+        <!-- Вкладка 5 -->
+        <div class="hero__content hero__content_fifth fifth">
+          <a href="#" class="hero__author-info author-info">
+            <img src="img/davidGurov.png" alt="Аватар: Давид Гуров" class="author-info__avatar">
+            <div class="author-info__spans">
+              <span class="author-info__name">Давид Гуров</span>
+              <span class="author-info__profession">Разработчик</span>
+            </div>
+            <!-- /.author-info__spans -->
+          </a>
+          <!-- /.hero__author-info -->
+          <span class="hero__section section section_green">CSS</span>
+          <h1 class="hero__title">Возможности CSS Grid Layout</h1>
+          <a href="https://sibertools.ru/universal/articales/main-article.html" class="hero__button">
+            Читать далее
+            <svg
+              class="hero__button-icon"
+              width="15"
+              height="7"
+            >
+              <use href="img/icons.svg#button-arrow"></use>
+            </svg>
+          </a>
+        </div>
+        <!-- /.hero__content -->
         <div class="hero__tabs">
           <h2 class="hero__rubric">Рекомендуем</h2>
           <span class="hero__divider"></span>
-          <div class="hero__tab active">
+          <div class="hero__tab active first">
             <span class="hero__section section section_bluegreen">css</span>
             <span class="hero__note">Как использовать CSS float после того, как вышел Flexbox</span>
           </div>
           <!-- /.hero__tab -->
           <span class="hero__divider"></span>
-          <div class="hero__tab">
+          <div class="hero__tab second">
             <span class="hero__section section section_greyblue">Javascript</span>
             <span class="hero__note">На каком стандарте писать скрипты, если я фрилансер</span>
           </div>
           <!-- /.hero__tab -->
           <span class="hero__divider"></span>
-          <div class="hero__tab">
+          <div class="hero__tab third">
             <span class="hero__section section section_purple">html</span>
             <span class="hero__note">Правильно вставляем картинку на сайт для Retina дисплея</span>
           </div>
           <!-- /.hero__tab -->
           <span class="hero__divider"></span>
-          <div class="hero__tab">
+          <div class="hero__tab fourth">
             <span class="hero__section section section_orange">Web design</span>
             <span class="hero__note">ТОП-10 плагинов для Figma</span>
           </div>
           <!-- /.hero__tab -->
           <span class="hero__divider"></span>
-          <div class="hero__tab">
+          <div class="hero__tab fifth">
             <span class="hero__section section section_green">CSS</span>
             <span class="hero__note">Возможности CSS Grid Layout, которые уже можно применять</span>
           </div>
@@ -586,7 +688,7 @@
             </div>
             <!-- /.articles__bookmark -->
             <div class="articles__img-wrap">
-              <img src="img/article-5.png" alt="" class="articles__img">
+              <img src="img/article-5.jpg" alt="" class="articles__img">
             </div>
             <!-- /.articles__img-wrap -->
             <div class="articles__info">
@@ -1124,7 +1226,7 @@
         <span class="modal__input-name">Тема</span>
         
         <div class="modal__input-warp">
-        <select name="subject" class="modal__subject input" name="subject" required>
+        <select class="modal__subject input" name="subject" id="subject" required>
           <option class="modal__subject-option modal__subject-option_default" value="" selected="selected" disabled>Выберите тему</option>
           <option class="modal__subject-option" value="Статьи">Статья</option>
           <option class="modal__subject-option" value="Новости">Новость</option>
@@ -1138,13 +1240,13 @@
 
         <span class="modal__input-name">Сообщение</span>
         <div class="modal__input-warp">
-          <textarea name="message" cols="30" rows="10" class="modal__message input" required></textarea>
+          <textarea name="message" id="message" cols="30" rows="10" class="modal__message input" required></textarea>
           <label class="modal__error error" for="message"></label>
         </div>
 
         <span class="modal__input-name">Email</span>
         <div class="modal__input-warp">
-          <input name="email"  type="email" class="modal__email input" required>
+          <input name="email" id="email" type="email" class="modal__email input" required>
           <label class="modal__error error" for="email"></label>
         </div>
         
