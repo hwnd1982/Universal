@@ -19,7 +19,7 @@ if (isset($_POST['email']) && !isset($_POST['message']) ) {
   <h2>Подписка на рассылку</h2>
   <b>Электронная почта:</b> $email
   ";
-  $location = 'Location: index.html';
+  $location = 'Location: thanks.html';
 } else {
   // Комментарий
   if (!isset($_POST['email'])) {
@@ -38,7 +38,7 @@ if (isset($_POST['email']) && !isset($_POST['message']) ) {
     <b>Почта для обратной связи:</b> $email
     ";
   }
-  $location = 'Location: index.html';
+  $location = 'Location: thanks.html';
 }
 
 // Настройки PHPMailer

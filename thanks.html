@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Universal</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+  <script src="js/main.js" defer></script>
+  <script src="js/validator.js" defer></script>
+  <script src="js/modal.js" defer></script>
+  <script src="js/mobile-menu.js" defer></script>
+ 
+</head>
+<body class="body">
+  <!-- Header -->
+  <header class="header">
+    <div class="header__container container">
+      <div class="header__inner inner">
+        <a href="#" class="header__logo logo">
+          <img src="img/logo.svg" alt="" class="header__logo-img">
+        </a>
+        <nav class="header__nav-menu nav-menu">
+          
+          <a href="#acticale" class="nav-menu__link">Статьи</a>
+          <a href="#news" class="nav-menu__link">Новости</a>
+          <a href="#hot" class="nav-menu__link">Горячее</a>
+          <a href="#footer" class="nav-menu__link">HTML</a>
+          <a href="#footer" class="nav-menu__link">CSS</a>
+          <a href="#footer" class="nav-menu__link">JavaScript</a>
+          <a href="#footer" class="nav-menu__link">Web Design</a>
+          <button class="header__button modal-button">ОСТАВИТЬ ЗАЯВКУ</button>
+        </nav>
+        
+        <div class="header__mobile-menu mobile-menu">
+          <span class="header__mobile-menu-line"></span>
+        </div>
+        <!-- /.mobile-menu -->
+      </div>
+      <!-- /.header__inner -->
+    </div>
+    <!-- /.container -->
+  </header>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero__container container">
+      <div class="hero__inner hero__inner_thanks inner">
+        <div class="hero__content hero__content_first hero__content_thanks active">
+          <h1 class="hero__title">Благодарим, за сотрудничество...</h1>
+          <a href="index.html" class="hero__button">
+            <svg
+              class="hero__button-icon"
+              width="18"
+              height="18"
+            >
+              <use href="img/icons.svg#home-icon"></use>
+            </svg>
+            На главную
+          </a>
+        </div>
+        <!-- /.hero__content -->
+      </div>
+      <!-- /.header__inner -->
+    </div>
+    <!-- /.container -->
+  </section>
+ 
+  <!-- Подвал -->
+  <footer id="footer" class="footer">
+    <div class="footer__container container">
+      <div class="footer__inner inner">
+        <div class="footer-top">
+          <h2 class="footer-top__title">Подпишитесь на нашу рассылку</h2>
+          <form action="send.php" method="POST" class="footer-top__form form">
+            <div class="footer-top__input-warp">
+              <input type="text" class="footer-top__input input" placeholder="Email" name="email" required>
+              <label class="footer-top__error error" for="email"></label>
+            </div>
+              <button class="footer-top__button button">Подписаться</button>
+          </form>
+        </div>
+        <!-- /.footer-top -->
+        <div class="footer-menu">
+          <div class="footer-menu__block">
+            <span class="footer-menu__divider footer-menu__divider_red"></span>
+            <span class="footer-menu__title">Новости</span>
+            <a href="#" class="footer-menu__link">Обновления</a>
+            <a href="#" class="footer-menu__link">Экспресс</a>
+            <a href="#" class="footer-menu__link">Politics</a>
+            <a href="#" class="footer-menu__link">Solar Eclipse</a>
+          </div>
+          <!-- /.footer-menu__block -->
+          <div class="footer-menu__block">
+            <span class="footer-menu__divider footer-menu__divider_purple"></span>
+            <span class="footer-menu__title">Статьи</span>
+            <a href="#" class="footer-menu__link">HTML</a>
+            <a href="#" class="footer-menu__link">CSS</a>
+            <a href="#" class="footer-menu__link">JavaScript</a>
+            <a href="#" class="footer-menu__link">Web Design</a>
+          </div>
+          <!-- /.footer-menu__block -->
+          <div class="footer-menu__block">
+            <span class="footer-menu__divider footer-menu__divider_blue"></span>
+            <span class="footer-menu__title">Видеоуроки</span>
+            <a href="#" class="footer-menu__link">Скринкасты</a>
+            <a href="#" class="footer-menu__link">Уроки</a>
+            <a href="#" class="footer-menu__link">Вебинары</a>
+          </div>
+          <!-- /.footer-menu__block -->
+          <div class="footer-menu__block">
+            <span class="footer-menu__divider footer-menu__divider_orange"></span>
+            <span class="footer-menu__title">Курсы</span>
+            <a href="#" class="footer-menu__link">Платные интенсивы</a>
+            <a href="#" class="footer-menu__link">Бесплатные стримы</a>
+            <a href="#" class="footer-menu__link">Мастер-классы</a>
+            <a href="#" class="footer-menu__link">Менторство</a>
+            <a href="#" class="footer-menu__link">Буткемпы</a>
+          </div>
+          <!-- /.footer-menu__block -->
+          <div class="footer-menu__block">
+            <span class="footer-menu__divider footer-menu__divider_green"></span>
+            <span class="footer-menu__title">Информация</span>
+            <a href="#" class="footer-menu__link">Политика данных</a>
+            <a href="#" class="footer-menu__link">Оферта сайта</a>
+            <a href="#" class="footer-menu__link">Реквизиты</a>
+            <a href="#" class="footer-menu__link">Контакты</a>
+          </div>
+          <!-- /.footer-menu__block -->
+          <div class="footer-menu__block">
+            <span class="footer-menu__divider footer-menu__divider_greyblue"></span>
+            <span class="footer-menu__title">Категории</span>
+            <a href="#" class="footer-menu__link">Популярное</a>
+            <a href="#" class="footer-menu__link">Горячее</a>
+            <a href="#" class="footer-menu__link">Подборки</a>
+            <a href="#" class="footer-menu__link">Мнения</a>
+            <a href="#" class="footer-menu__link">Карьера</a>
+          </div>
+          <!-- /.footer-menu__block -->
+        </div>
+        <!-- /.footer-menu -->
+        <span class="footer-menu__divider footer-menu__divider_main"></span>
+        <div class="footer-menu-bottom">
+          <a href="#" class="footer-menu-bottom__logo">
+            <img src="img/logo-icon.svg" alt="" class="footer-menu-bottom__logo-img">
+          </a>
+          <div class="footer-menu-bottom__links">
+            <a href="#" class="footer-menu-bottom__link">Контакты</a>
+            <a href="#" class="footer-menu-bottom__link">Работа у нас</a>
+            <a href="#" class="footer-menu-bottom__link">Реклама</a>
+            <button class="footer-menu-bottom__link modal-button">Обратная связь</button>
+          </div>
+          <!-- /.footer-menu-bottom__links -->
+          <div class="footer-menu-bottom__networks">
+              <!-- Facebook -->
+              <a href="https://www.facebook.com/" target="_blank" class="footer-menu-bottom__networks-link footer-menu-bottom__networks-link_facebook">
+                <svg
+                  class="footer-menu-bottom__facebook-icon footer-menu-bottom__icons"
+                  width="10"
+                  height="18"
+                >
+                  <use href="img/icons.svg#facebook-icon"></use>
+                </svg>
+              </a>
+              <!-- Twitter -->
+              <a href="https://twitter.com/" target="_blank" class="footer-menu-bottom__networks-link footer-menu-bottom__networks-link_twitter">
+                <svg
+                  class="footer-menu-bottom__twitter-icon footer-menu-bottom__icons"
+                  width="20"
+                  height="20"
+                >
+                  <use href="img/icons.svg#twitter-icon"></use>
+                </svg>
+              </a>
+              <!-- Youtube -->
+              <a href="https://www.youtube.com/" target="_blank" class="footer-menu-bottom__networks-link footer-menu-bottom__networks-link_youtube">
+                <svg
+                  class="footer-menu-bottom__youtube-icon footer-menu-bottom__icons"
+                  width="20"
+                  height="20"
+                >
+                  <use href="img/icons.svg#youtube-icon"></use>
+                </svg>
+              </a>
+              <!-- Instagram -->
+              <a href="https://www.instagram.com/" target="_blank" class="footer-menu-bottom__networks-link footer-menu-bottom__networks-link_instagram">
+                <svg
+                  class="footer-menu-bottom__instagram-icon footer-menu-bottom__icons"
+                  width="24"
+                  height="24"
+                >
+                  <use href="img/icons.svg#instagram-icon"></use>
+                </svg>
+              </a>
+            </div>
+            <!-- /.footer-menu-bottom__networks -->
+        </div>
+        <!-- /.footer-menu-bottom -->
+        <span class="footer-menu__divider footer-menu__divider_main"></span>
+        <div class="footer-bottom">
+          <p class="footer-bottom__slogan">
+            Universal — это онлайн издание, в котором мы публикуем полезные материалы о веб разработке: статьи,
+            новости, видеоуроки, подборки, ссылки и курсы. Материалы на сайте бесплатны, но при копировании,
+            указывайте ссылку.
+          </p>
+          <span class="footer-bottom__copyright">© 2020 Universal Magazine</span>
+        </div>
+        <!-- /.footer-bottom -->
+      </div>
+      <!-- /.footer__inner -->
+    </div>
+    <!-- /.footer__container -->
+  </footer>
+  <div class="modal hidden">
+    <div class="modal__overlay">
+      <form action="send.php" method="POST" class="modal__form form">
+        <div class="modal__close">
+          <svg
+            class="modal__close-button"
+            width="16"
+            height="16"
+          >
+            <use href="img/icons.svg#close-button"></use>
+          </svg>
+        </div>
+        <h3 class="modal__title">Обратная связь</h3>
+        <span class="modal__input-name">Тема</span>
+        
+        <div class="modal__input-warp">
+        <select class="modal__subject input" name="subject" id="subject" required>
+          <option class="modal__subject-option modal__subject-option_default" value="" selected="selected" disabled>Выберите тему</option>
+          <option class="modal__subject-option" value="Статьи">Статья</option>
+          <option class="modal__subject-option" value="Новости">Новость</option>
+          <option class="modal__subject-option" value="CSS">Мнение</option>
+          <option class="modal__subject-option" value="CSS">CSS</option>
+          <option class="modal__subject-option" value="JavaScript">JavaScript</option>
+          <option class="modal__subject-option" value="Web Design">Web Design</option>
+        </select>
+        <label class="modal__error error" for="subject"></label>
+        </div>
+
+        <span class="modal__input-name">Сообщение</span>
+        <div class="modal__input-warp">
+          <textarea name="message" id="message" cols="30" rows="10" class="modal__message input" required></textarea>
+          <label class="modal__error error" for="message"></label>
+        </div>
+
+        <span class="modal__input-name">Email</span>
+        <div class="modal__input-warp">
+          <input name="email" id="email" type="email" class="modal__email input" required>
+          <label class="modal__error error" for="email"></label>
+        </div>
+        
+   
+        <label class="modal__custom-checkbox custom-checkbox modal__input-warp" for="checkbox">
+          <input name="permission" class="custom-checkbox__button input" type="checkbox" id="checkbox" required>
+          <span class="custom-checkbox__span error">Согласен с обработкой данных</span>
+        </label>
+   
+
+        <button class="modal__button button">Отправить</button>
+      </form>
+    </div>
+    <!-- /.modal__overlay -->
+  </div>
+  <!-- /.mobile-menu -->
+</body>
+</html>

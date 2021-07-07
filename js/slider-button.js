@@ -16,7 +16,6 @@ var activeSlideIndex = {
   }
 };
 
-console.log('activeSlideIndex: ', activeSlideIndex);
 
 initializeScroll(activeSlideIndex, slidesList);
 
@@ -27,36 +26,21 @@ btnNext.addEventListener('click', () => {
   scrollRight(activeSlideIndex, slidesList);
 });
 
-
-// document.addEventListener('keydown', (event) => {
-//   if ((event.code == 'ArrowRight') || (event.code == 'ArrowLeft')) {
-//     const hotelSliderPosition = document.querySelector('.hotel-slider').getBoundingClientRect();
-
-//     const hotelSliderTop = hotelSliderPosition.top;
-//     const hotelSliderHeight = hotelSliderPosition.height;
+document.addEventListener('keydown', (event) => {
+  if ((event.code == 'ArrowRight') || (event.code == 'ArrowLeft')) {
+    const sliderPosition = document.querySelector('.slider').getBoundingClientRect();
+    
+    const sliderTop = sliderPosition.top;
+    const sliderHeight = sliderPosition.height;
   
     
-//     if ((hotelSliderTop >= 0) && (window.innerHeight-hotelSliderTop >= hotelSliderHeight)) {
-//       if (event.code == 'ArrowRight') {
-//         scrollRight(activeHotelSlideIndex, hotelSlidesList);
-//       }
-//       if (event.code == 'ArrowLeft') {
-//         scrollLeft(activeHotelSlideIndex, hotelSlidesList);
-//       }
-//     }
-
-//     const reviewSliderPosition = document.querySelector('.review-slider').getBoundingClientRect();
-
-//     const reviewSliderTop = reviewSliderPosition.top;
-//     const reviewSliderHeight = reviewSliderPosition.height;
-
-//     if ((reviewSliderTop >= 0) && (window.innerHeight-reviewSliderTop >= reviewSliderHeight)) {
-//       if (event.code == 'ArrowRight') {
-//         scrollRight(activeReviewSlideIndex, reviewSlidesList);
-//       }
-//       if (event.code == 'ArrowLeft') {
-//         scrollLeft(activeReviewSlideIndex, reviewSlidesList);
-//       }
-//     }
-//   }
-// });
+    if ((sliderTop >= 0) && (window.innerHeight-sliderTop >= sliderHeight)) {
+      if (event.code == 'ArrowRight') {
+        scrollRight(activeSlideIndex, slidesList);
+      }
+      if (event.code == 'ArrowLeft') {
+        scrollLeft(activeSlideIndex, slidesList);
+      }
+    }
+  }
+});

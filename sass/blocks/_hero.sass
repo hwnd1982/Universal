@@ -23,6 +23,9 @@
     border-radius: 10px
     overflow: hidden
     z-index: -2
+    &_thanks
+      grid-template-columns: 1fr
+      margin-bottom: 50px
   &__content
     display: none
     &.active
@@ -55,6 +58,8 @@
     &_fifth
       &:before
         background-image: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url(../img/block-4.png)
+    &_thanks
+
   &__author-info
     margin-bottom: 145px
   &__title
@@ -124,6 +129,8 @@
       margin-top: 20px
       grid-template-columns: 1fr
       grid-template-rows: 1fr 110px
+      &_thanks
+        grid-template-rows: 1fr
 
     &__content
       &.active
@@ -172,6 +179,8 @@
       grid-template-rows: 355px 70px
     &__inner
       grid-template-rows: 1fr 135px
+      &_thanks
+        grid-template-rows: 1fr
     &__title
       margin-top: 20px
       margin-bottom: 20px

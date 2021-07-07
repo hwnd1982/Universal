@@ -801,6 +801,12 @@ template {
   z-index: -2;
 }
 
+.hero__inner_thanks {
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  margin-bottom: 50px;
+}
+
 .hero__content {
   display: none;
 }
@@ -942,6 +948,10 @@ template {
     -ms-grid-rows: 1fr 110px;
         grid-template-rows: 1fr 110px;
   }
+  .hero__inner_thanks {
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+  }
   .hero__content.active {
     display: -ms-grid;
     display: grid;
@@ -1019,6 +1029,10 @@ template {
   .hero__inner {
     -ms-grid-rows: 1fr 135px;
         grid-template-rows: 1fr 135px;
+  }
+  .hero__inner_thanks {
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
   }
   .hero__title {
     margin-top: 20px;
