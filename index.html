@@ -23,9 +23,10 @@
           <img src="img/logo.svg" alt="" class="header__logo-img">
         </a>
         <nav class="header__nav-menu nav-menu">
-          <a href="#" class="nav-menu__link">Статьи</a>
-          <a href="#" class="nav-menu__link">Новости</a>
-          <a href="#" class="nav-menu__link">Горячее</a>
+          
+          <a href="#acticale" class="nav-menu__link">Статьи</a>
+          <a href="#news" class="nav-menu__link">Новости</a>
+          <a href="#hot" class="nav-menu__link">Горячее</a>
           <a href="#" class="nav-menu__link">HTML</a>
           <a href="#" class="nav-menu__link">CSS</a>
           <a href="#" class="nav-menu__link">JavaScript</a>
@@ -82,8 +83,8 @@
             <!-- /.author-info__spans -->
           </a>
           <!-- /.hero__author-info -->
-          <span class="hero__section section section_blue">Javascript</span>
-          <h1 class="hero__title">Расширение Chrome защищает от атак</h1>
+          <span class="hero__section section section_greyblue">Javascript</span>
+          <h1 class="hero__title">На каком стандарте писать скрипты</h1>
           <a href="https://sibertools.ru/universal/articales/main-article.html" class="hero__button">
             Читать далее
             <svg
@@ -107,8 +108,8 @@
             <!-- /.author-info__spans -->
           </a>
           <!-- /.hero__author-info -->
-          <span class="hero__section section section_blue">Javascript</span>
-          <h1 class="hero__title">Расширение Chrome защищает от атак</h1>
+          <span class="hero__section section section_purple">html</span>
+          <h1 class="hero__title">Картинку на сайт для Retina</h1>
           <a href="https://sibertools.ru/universal/articales/main-article.html" class="hero__button">
             Читать далее
             <svg
@@ -132,8 +133,8 @@
             <!-- /.author-info__spans -->
           </a>
           <!-- /.hero__author-info -->
-          <span class="hero__section section section_blue">Javascript</span>
-          <h1 class="hero__title">Расширение Chrome защищает от атак</h1>
+          <span class="hero__section section section_orange">Web design</span>
+          <h1 class="hero__title">ТОП-10 плагинов для Figma</h1>
           <a href="https://sibertools.ru/universal/articales/main-article.html" class="hero__button">
             Читать далее
             <svg
@@ -244,7 +245,7 @@
   </div>
   <!-- /.hero-extra -->
   <!-- Info Cards -->
-  <div class="info-cards">
+  <div class="info-cards" id="acticale">
     <div class="info-cards__container container">
       <div class="info-cards__inner inner">
         <!-- 01 Статья A -->
@@ -487,7 +488,7 @@
     <!-- /.article-banner__container -->
   </section>
   <!-- Статьи -->
-  <section class="articles articles-extra">
+  <section id="news" class="articles articles-extra">
     <div class="articles__container container">
       <div class="articles__inner inner">
         <div class="articles__main">
@@ -863,7 +864,7 @@
     </div>
     <!-- /.articles__container -->
   </section>
-  <div class="other-cards">
+  <div id="hot" class="other-cards">
     <div class="other-cards__container container">
       <div class="other-cards__inner inner">
         <!-- Слайдер -->
@@ -1075,8 +1076,11 @@
         <div class="footer-top">
           <h2 class="footer-top__title">Подпишитесь на нашу рассылку</h2>
           <form action="send.php" method="POST" class="footer-top__form form">
-            <input type="text" class="footer-top__input input" placeholder="Email" name="email" required>
-            <button class="footer-top__button button">Подписаться</button>
+            <div class="footer-top__input-warp">
+              <input type="text" class="footer-top__input input" placeholder="Email" name="email" required>
+              <label class="footer-top__error error" for="email"></label>
+            </div>
+              <button class="footer-top__button button">Подписаться</button>
           </form>
         </div>
         <!-- /.footer-top -->

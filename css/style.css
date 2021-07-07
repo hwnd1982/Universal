@@ -876,6 +876,7 @@ template {
 
 .hero__button {
   display: block;
+  height: 40px;
   width: 155px;
   padding: 10px 20px;
   background: #4592FF;
@@ -913,14 +914,19 @@ template {
     -ms-grid-columns: min-content 1fr;
         grid-template-columns: -webkit-min-content 1fr;
         grid-template-columns: min-content 1fr;
-    -ms-grid-rows: (min-content)[3];
-        grid-template-rows: repeat(3, -webkit-min-content);
-        grid-template-rows: repeat(3, min-content);
+    -ms-grid-rows: (min-content)[2] 1fr;
+        grid-template-rows: repeat(2, -webkit-min-content) 1fr;
+        grid-template-rows: repeat(2, min-content) 1fr;
     -webkit-column-gap: 30px;
             column-gap: 30px;
     -ms-grid-row: 1;
     grid-row: 1 / 1;
     padding: 25px;
+  }
+  .hero__button {
+    -ms-flex-item-align: end;
+        -ms-grid-row-align: end;
+        align-self: end;
   }
   .hero__author-info {
     -ms-grid-row: 1;
@@ -1020,6 +1026,7 @@ template {
         grid-template-rows: repeat(4, min-content);
   }
   .hero__author-info {
+    grid-row: span 1;
     margin-bottom: 20px;
   }
   .hero__title {
@@ -1037,6 +1044,7 @@ template {
   .hero__button {
     -ms-grid-column-align: center;
         justify-self: center;
+    margin-top: 30px;
   }
   .hero__rubric {
     width: 100%;
@@ -3643,6 +3651,15 @@ template {
   background: #4592FF;
   border-radius: 20px;
   cursor: pointer;
+}
+
+.footer-top__input-warp {
+  position: relative;
+}
+
+.footer-top__error.invalid {
+  bottom: -10px;
+  right: 10px;
 }
 
 .footer-menu {
