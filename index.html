@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Universal</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
   <script src="js/main.js" defer></script>
   <script src="js/validator.js" defer></script>
   <script src="js/modal.js" defer></script>
@@ -13,6 +14,7 @@
   <script src="js/slider.js" defer></script>
   <script src="js/slider-pagination.js" defer></script>
   <script src="js/tabs.js" defer></script>
+  <script src="js/bookmark.js" defer></script>
 </head>
 <body class="body">
   <!-- Header -->
@@ -27,10 +29,10 @@
           <a href="#acticale" class="nav-menu__link">Статьи</a>
           <a href="#news" class="nav-menu__link">Новости</a>
           <a href="#hot" class="nav-menu__link">Горячее</a>
-          <a href="#" class="nav-menu__link">HTML</a>
-          <a href="#" class="nav-menu__link">CSS</a>
-          <a href="#" class="nav-menu__link">JavaScript</a>
-          <a href="#" class="nav-menu__link">Web Design</a>
+          <a href="#footer" class="nav-menu__link">HTML</a>
+          <a href="#footer" class="nav-menu__link">CSS</a>
+          <a href="#footer" class="nav-menu__link">JavaScript</a>
+          <a href="#footer" class="nav-menu__link">Web Design</a>
           <button class="header__button modal-button">ОСТАВИТЬ ЗАЯВКУ</button>
         </nav>
         
@@ -494,7 +496,7 @@
         <div class="articles__main">
           <!-- Статья 1 -->
           <div class="articles__item">
-            <div class="articles__bookmark">
+            <div class="articles__bookmark bookmark">
               <svg
                 class="articles__bookmark-icon"
                 width="14"
@@ -540,7 +542,7 @@
           <span class="articles__divider articles__divider_main"></span>
           <!-- Статья 2 -->
           <div class="articles__item">
-            <div class="articles__bookmark checked">
+            <div class="articles__bookmark bookmark checked">
               <svg
                 class="articles__bookmark-icon"
                 width="14"
@@ -586,7 +588,7 @@
           <span class="articles__divider articles__divider_main"></span>
           <!-- Статья 3 -->
           <div class="articles__item">
-            <div class="articles__bookmark">
+            <div class="articles__bookmark bookmark">
               <svg
                 class="articles__bookmark-icon"
                 width="14"
@@ -632,7 +634,7 @@
           <span class="articles__divider articles__divider_main"></span>
           <!-- Статья 4 -->
           <div class="articles__item">
-            <div class="articles__bookmark">
+            <div class="articles__bookmark bookmark">
               <svg
                 class="articles__bookmark-icon"
                 width="14"
@@ -678,7 +680,7 @@
           <span class="articles__divider articles__divider_main"></span>
           <!-- Статья 5 -->
           <div class="articles__item">
-            <div class="articles__bookmark">
+            <div class="articles__bookmark bookmark">
               <svg
                 class="articles__bookmark-icon"
                 width="14"
@@ -724,7 +726,7 @@
           <span class="articles__divider articles__divider_main"></span>
           <!-- Статья 6 -->
           <div class="articles__item">
-            <div class="articles__bookmark">
+            <div class="articles__bookmark bookmark">
               <svg
                 class="articles__bookmark-icon"
                 width="14"
@@ -1070,7 +1072,7 @@
   </div>
   <!-- /.other-cards -->
   <!-- Подвал -->
-  <footer class="footer">
+  <footer id="footer" class="footer">
     <div class="footer__container container">
       <div class="footer__inner inner">
         <div class="footer-top">

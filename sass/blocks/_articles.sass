@@ -73,6 +73,7 @@
     top: 25px
     fill: #BCBFC2
     z-index: 5
+    cursor: pointer
     &_additional-page
       display: flex
       align-items: center
@@ -622,3 +623,10 @@
       &_additional-page
         top: 50px
         left: 94%
+
+@media (min-width: 992px)
+  .articles
+    &__bookmark
+      transition: all 0.3s ease-in-out
+      &:hover
+        transform: scale(1.1)

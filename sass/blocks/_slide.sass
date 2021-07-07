@@ -79,6 +79,7 @@
     line-height: 20px
     color: $text-color
     border: none
+    cursor: pointer
     &-icon
       fill: $text-color
       margin-right: 8px
@@ -119,3 +120,11 @@
     &__title
       font-size: 20px
       line-height: 30px
+
+@media (min-width: 992px)
+  .slide
+    &__button
+      transition: all 0.3s ease-in-out
+      &:hover
+        transform: scale(1.03)
+        box-shadow: 0 3px 10px rgba(255, 255, 255, 0.2)

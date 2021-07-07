@@ -467,3 +467,30 @@
           display: none
         &__underlay
           display: none
+
+@media (min-width: 992px)
+  .card-content
+    &-tags
+      &__link
+        transition: all 0.3s ease-in-out
+        &:hover
+          transform: scale(1.05)
+          text-shadow: 0 3px 10px rgba(0, 0, 0, 0.3)
+    &-links
+      &__link
+        transition: all 0.3s ease-in-out
+        &:hover
+          transform: scale(1.1)
+    &-files
+      &__link
+        transition: all 0.3s ease-in-out
+        &:hover
+          transform: scale(1.05)
+          text-shadow: 0 3px 10px rgba(0, 0, 0, 0.3)
+    &-article
+      &-d
+        &__button
+          transition: all 0.3s ease-in-out
+          &:hover
+            transform: scale(1.03)
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2)

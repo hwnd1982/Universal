@@ -235,3 +235,18 @@
     &__divider
       width: 100%
       height: 1px
+
+@media (min-width: 992px)
+  .hero
+    &__button
+      transition: all 0.3s ease-in-out
+      &:hover
+        transform: scale(1.03)
+        box-shadow: 0 3px 10px rgba(255, 255, 255, 0.2)
+    &__tab
+      transition: all 0.3s ease-in-out
+      &.active
+        &:hover
+          box-shadow: none
+      &:hover
+        box-shadow: inset 0 3px 10px rgba(0, 0, 0, 0.2)

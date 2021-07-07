@@ -65,3 +65,11 @@
   .article-banner
     &__title
       width: 275px
+
+@media (min-width: 992px)
+  .article-banner
+    &__button
+      transition: all 0.3s ease-in-out
+      &:hover
+        transform: scale(1.03)
+        box-shadow: 0 3px 10px rgba(255, 255, 255, 0.2)
