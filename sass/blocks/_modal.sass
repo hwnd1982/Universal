@@ -44,8 +44,9 @@
     width: 20px
     height: 20px
     background-color: transparent
+    fill: #BCBFC2
     &-button
-      fill: #BCBFC2
+      fill: inherit
   &__title
     margin-top: 0
     margin-bottom: 25px
@@ -200,3 +201,16 @@
         font-size: 12px
         border-radius: 0
         border: none
+
+@media (min-width: 992px)
+  .modal
+    &__button
+      transition: all 0.3s ease-in-out
+      &:hover
+        transform: scale(1.03)
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3)
+    &__close
+      transition: all 0.3s ease-in-out
+      &:hover
+        fill: #262D33
+        transform: scale(1.1)

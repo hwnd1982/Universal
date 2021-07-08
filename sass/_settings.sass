@@ -77,11 +77,16 @@
 
 .button-top
   position: fixed
+  display: flex
+  align-items: center
+  justify-content: center
+  border-radius: 50%
   bottom: 50px
   right: 50px
   z-index: 100
+  fill: rgba(0, 0, 0, 0.4)
   &-icon
-    fill: rgba(0, 0, 0, 0.4)
+    fill: inherit
 
 @media (max-width: 1200px)
   .container
@@ -127,3 +132,11 @@
   .error
     &.invalid
       font-size: 10px
+
+@media (min-width: 992px)
+  .button-top
+    transition: all 0.3s ease-in-out
+    &:hover
+      transform: scale(1.03)
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4)
+      fill: rgba(0, 0, 0, 0.6)
