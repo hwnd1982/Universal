@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Universal</title>
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/style.min.css">
   <link rel="icon" type="image/svg+xml" href="../img/favicon.svg">
   <script src="../js/main.js" defer></script>
   <script src="../js/validator.js" defer></script>
@@ -25,13 +25,13 @@
           <img src="../img/logo-light.svg" alt="" class="header__logo-img">
         </a>
         <nav class="header__nav-menu nav-menu nav-menu_light nav-menu_additional-page">
-          <a href="#" class="nav-menu__link nav-menu__link_light">Статьи</a>
-          <a href="#" class="nav-menu__link nav-menu__link_light">Новости</a>
-          <a href="#" class="nav-menu__link nav-menu__link_light">Горячее</a>
-          <a href="#" class="nav-menu__link nav-menu__link_light">HTML</a>
-          <a href="#" class="nav-menu__link nav-menu__link_light">CSS</a>
-          <a href="#" class="nav-menu__link nav-menu__link_light">JavaScript</a>
-          <a href="#" class="nav-menu__link nav-menu__link_light">Web Design</a>
+          <a href="#articales" class="nav-menu__link nav-menu__link_light">Статьи</a>
+          <a href="#news" class="nav-menu__link nav-menu__link_light">Новости</a>
+          <a href="#hot" class="nav-menu__link nav-menu__link_light">Горячее</a>
+          <a href="#footer" class="nav-menu__link nav-menu__link_light">HTML</a>
+          <a href="#footer" class="nav-menu__link nav-menu__link_light">CSS</a>
+          <a href="#js" class="nav-menu__link nav-menu__link_light">JavaScript</a>
+          <a href="#footer" class="nav-menu__link nav-menu__link_light">Web Design</a>
           <button class="header__button header__button_additional-page modal-button">ОСТАВИТЬ ЗАЯВКУ</button>
         </nav>
         <div class="header__mobile-menu mobile-menu header__mobile-menu_light">
@@ -44,12 +44,12 @@
     <!-- /.header__container -->
   </header>
   <!-- Заголовок статьи -->
-  <section class="articles">
+  <div class="articles">
     <div class="articles__container container">
       <div class="articles__item articles__item_additional-page">
         <div class="articles__img-wrap articles__img-wrap_additional-page">
           <img
-            src="../img/article-2.png"
+            src="../img/article-2.jpg"
             alt=""
             class="articles__img articles__img_additional-page"
           >
@@ -106,7 +106,7 @@
           </div>
           <!-- /.articles__info-top-group -->
           
-          <h3 class="articles__title articles__title_additional-page">Платные курсы — это не быстрый способ выйти на нужный уровень</h3>
+          <h1 class="articles__title articles__title_additional-page">Платные курсы — это не быстрый способ выйти на нужный уровень</h1>
           <p class="articles__text articles__text_additional-page">Среди новичков распространено мнение, что если пройти какой-то онлайн-курс, то это решит все проблемы. Но они не берут в расчет, что лучшее обучение — это практика.</p>
           <div class="articles__info-group articles__info-group_additional-page">
             <svg
@@ -141,9 +141,9 @@
       <!-- /.articles__item -->
     </div>
     <!-- /.head__container -->
-  </section>
+  </div>
   <!-- Начало ститьи -->
-  <div class="article-begin">
+  <div id="articles" class="article-begin">
     <div class="article-begin__container container">
       <div class="article-begin__inner inner">
         <div class="article-begin__indention">
@@ -157,7 +157,7 @@
           </p>
           <!-- /.article-begin__text -->
           <div class="article-begin__card-author card-author">
-            <img src="../img/miraStahova.png" alt="" class="card-author__avatar">
+            <img src="../img/miraStahova.jpg" alt="" class="card-author__avatar">
             <div class="card-author__info-group">
               <span class="card-author__name">Мира Стахова</span>
               <span class="card-author__profession">Фрилансер</span>
@@ -194,12 +194,12 @@
   </div>
   <!-- /.articles__begin -->
   <!-- Сладер -->
-  <div class="articales-photos">
+  <div id="news" class="articales-photos">
     <div class="articales-photos__container container">
       <div class="articales-photos__slider slider">
         <div class="slider__wrap slider__wrap_acticale">
           <div class="slider__buttons-bar">
-            <div class="slider__buttons slider__buttons_prev buttons_prev">
+            <div class="slider__buttons slider__buttons_prev buttons buttons_prev">
               <svg
                 class="slider__buttons-icon slider__buttons-icon_prev"
                 width="60"
@@ -209,7 +209,7 @@
               </svg>
             </div>
             <!-- /.slider__button-prev -->
-            <div class="slider__buttons slider__buttons_next buttons_next">
+            <div class="slider__buttons slider__buttons_next buttons buttons_next">
               <svg
                 class="slider__buttons-icon slider__buttons-icon_next"
                 width="60"
@@ -223,7 +223,7 @@
           <!-- /.slider__buttons -->
           <!-- Слайд 1 -->
           <div class="slider__acticale-slide acticale-slide slide">
-            <img src="../img/article-slide-1.png" alt="" class="acticale-slide__img">
+            <img src="../img/article-slide-1.jpg" alt="" class="acticale-slide__img">
           </div>
           <!-- /.slider__acticale-slide -->
           <!-- Слайд 2 -->
@@ -256,7 +256,7 @@
           <span class="acticale-slide-caption__divider"></span>
           <div class="acticale-slide-caption__author">
             <img
-              src="../img/andreyVashigaev.png"
+              src="../img/andreyVashigaev.jpg"
               alt=""
               class="acticale-slide-caption__author-avatar"
             >
@@ -276,14 +276,14 @@
   </div>
   <!-- /.articales-slider -->
   <!-- Продолжение ститьи -->
-  <div class="article-continuation">
+  <div id="js" class="article-continuation">
     <div class="article-continuation__container container">
       <div class="article-continuation__inner inner">
         <div class="article-continuation__indention">
           <div class="article-continuation__card-additional card-additional">
             <h3 class="card-additional__rubric">Материал по теме</h3>
             <img
-              src="../img/article-additional.png"
+              src="../img/article-additional.jpg"
               alt=""
               class="card-additional__img"
             >
@@ -334,7 +334,7 @@
             внедрения и модернизации дальнейших направлений развития. Таким образом консультация с широким
             активом способствует подготовки и реализации направлений
           </p>
-          <p class="article-continuation__quote">
+          <p id="hot" class="article-continuation__quote">
             <svg
               class="article-continuation__quote-icon"
               width="70"
@@ -419,7 +419,7 @@
       <div class="articales-cards__inner inner">
         <!-- Карточка 1 -->
         <div class="articales-cards__item">
-          <img src="../img/articles-cards-item-1.png" alt="" class="articales-cards__img">
+          <img src="../img/articles-cards-item-1.jpg" alt="" class="articales-cards__img">
           <h3 class="articales-cards__title">Техника работы по помидоркам — это как?</h3>
           <div class="articales-cards__info">
             <svg
@@ -444,7 +444,7 @@
         <!-- /.articales-cards__item -->
         <!-- Карточка 2 -->
         <div class="articales-cards__item">
-          <img src="../img/articles-cards-item-2.png" alt="" class="articales-cards__img">
+          <img src="../img/articles-cards-item-2.jpg" alt="" class="articales-cards__img">
           <h3 class="articales-cards__title">Вопросы на собеседовании для джуна</h3>
           <div class="articales-cards__info">
             <svg
@@ -469,7 +469,7 @@
         <!-- /.articales-cards__item -->
         <!-- Карточка 3 -->
         <div class="articales-cards__item">
-          <img src="../img/articles-cards-item-3.png" alt="" class="articales-cards__img">
+          <img src="../img/articles-cards-item-3.jpg" alt="" class="articales-cards__img">
           <h3 class="articales-cards__title">Список стран, куда можно улететь</h3>
           <div class="articales-cards__info">
             <svg
@@ -494,7 +494,7 @@
         <!-- /.articales-cards__item -->
         <!-- Карточка 4 -->
         <div class="articales-cards__item">
-          <img src="../img/articles-cards-item-4.png" alt="" class="articales-cards__img">
+          <img src="../img/articles-cards-item-4.jpg" alt="" class="articales-cards__img">
           <h3 class="articales-cards__title">В вашем портфолио могут быть фейковые работы</h3>
           <div class="articales-cards__info">
             <svg
@@ -546,7 +546,7 @@
             <span class="comments__divider"></span>
 
             <div class="comments__comment">
-              <img src="../img/mishailStepashin.png" alt="" class="comments__avatar">
+              <img src="../img/mishailStepashin.jpg" alt="" class="comments__avatar">
               
                 <div class="comments__info-group">
                   <span class="comments__user-name">Михаил Степашин</span>
@@ -598,7 +598,7 @@
           <div class="comments__item">
             <span class="comments__divider"></span>
             <div class="comments__comment reply">
-              <img src="../img/miraStahova.png" alt="" class="comments__avatar">
+              <img src="../img/miraStahova.jpg" alt="" class="comments__avatar">
               
               <!-- <div class="comments__info"> -->
                 
@@ -654,7 +654,7 @@
           <div class="comments__item">
             <span class="comments__divider"></span>
             <div class="comments__comment">
-              <img src="../img/anjelaIvanova.png" alt="" class="comments__avatar">
+              <img src="../img/anjelaIvanova.jpg" alt="" class="comments__avatar">
               
               <!-- <div class="comments__info"> -->
 
@@ -664,7 +664,7 @@
                 </div>
                 <!-- /.comments__info-group -->
                 
-                <span class="comments__text">Если честно, кажется, что этот налоговый режим ввели, чтобы собрать больше денег с народа. Я, конечно, понимаю, что бюджеты надо пополнять, но не лучше ли обложить налогом богатых? <br>&nbsp
+                <span class="comments__text">Если честно, кажется, что этот налоговый режим ввели, чтобы собрать больше денег с народа. Я, конечно, понимаю, что бюджеты надо пополнять, но не лучше ли обложить налогом богатых? <br> <br>
                 </span>
                 <div class="comments__info-bar">
                   <button class="comments__button-reply">
@@ -709,7 +709,7 @@
             <span class="comments__divider"></span>
             <div class="comments__comment">
               <img
-                src="../img/krisJakov.png"
+                src="../img/krisJakov.jpg"
                 alt=""
                 class="comments__avatar"
               >
@@ -766,7 +766,7 @@
             <span class="comments__divider"></span>
 
             <div class="comments__comment">
-              <img src="../img/mishailStepashin.png" alt="" class="comments__avatar">
+              <img src="../img/mishailStepashin.jpg" alt="" class="comments__avatar">
               
                 <div class="comments__info-group">
                   <span class="comments__user-name">Михаил Степашин</span>
@@ -818,7 +818,7 @@
           <div class="comments__item hidden">
             <span class="comments__divider"></span>
             <div class="comments__comment reply">
-              <img src="../img/miraStahova.png" alt="" class="comments__avatar">
+              <img src="../img/miraStahova.jpg" alt="" class="comments__avatar">
               
               <!-- <div class="comments__info"> -->
                 
@@ -874,7 +874,7 @@
           <div class="comments__item hidden">
             <span class="comments__divider"></span>
             <div class="comments__comment">
-              <img src="../img/anjelaIvanova.png" alt="" class="comments__avatar">
+              <img src="../img/anjelaIvanova.jpg" alt="" class="comments__avatar">
               
               <!-- <div class="comments__info"> -->
 
@@ -884,7 +884,7 @@
                 </div>
                 <!-- /.comments__info-group -->
                 
-                <span class="comments__text">Если честно, кажется, что этот налоговый режим ввели, чтобы собрать больше денег с народа. Я, конечно, понимаю, что бюджеты надо пополнять, но не лучше ли обложить налогом богатых? <br>&nbsp
+                <span class="comments__text">Если честно, кажется, что этот налоговый режим ввели, чтобы собрать больше денег с народа. Я, конечно, понимаю, что бюджеты надо пополнять, но не лучше ли обложить налогом богатых? <br> <br>
                 </span>
                 <div class="comments__info-bar">
                   <button class="comments__button-reply">
@@ -929,7 +929,7 @@
             <span class="comments__divider"></span>
             <div class="comments__comment">
               <img
-                src="../img/krisJakov.png"
+                src="../img/krisJakov.jpg"
                 alt=""
                 class="comments__avatar"
               >
@@ -993,16 +993,16 @@
         </button>
 
         <form  action="../send.php" method="POST" class="comments__form form">
-          <img src="../img/user-avatar.png" alt="" class="comments__form-avatar">
+          <img src="../img/user-avatar.jpg" alt="" class="comments__form-avatar">
 
           <h3 class="comments__form-title">Что вы думаете на этот счет?</h3>
           <div class="comments__form-input-wrap">
-            <textarea name="message" id="message" cols="30" rows="6" class="comments__form-input input" required></textarea>
-            <label class="comments__form-error error" for="message"></label>
+            <textarea name="message" id="comment" cols="30" rows="6" class="comments__form-input input" required></textarea>
+            <label class="comments__form-error error" for="comment"></label>
           </div>
           <!-- /.comments__form-input-wrap -->
           
-          <input class="comments__form-subject" id="subject"  type="checkbox" name="subject" value="Новый налоговый режим для фрилансеров — налог на проф. доход" checked required>
+          <input class="comments__form-subject" type="checkbox" name="subject" value="Платные курсы — это не быстрый способ выйти на нужный уровень" checked required>
             
           <button class="comments__form-button button">            
             Отправить
@@ -1023,7 +1023,7 @@
   </div>
   <!-- /.comments -->
   <!-- Подвал -->
-  <footer class="footer">
+  <footer id="footer" class="footer">
     <div class="footer__container container">
       <div class="footer__inner inner">
         <div class="footer-top">
@@ -1095,7 +1095,7 @@
           <!-- /.footer-menu__block -->
         </div>
         <!-- /.footer-menu -->
-        <span class="footer-menu__divider footer-menu__divider_main"></span>
+        <span class="footer__divider footer__divider_main"></span>
         <div class="footer-menu-bottom">
           <a href="#" class="footer-menu-bottom__logo">
             <img src="../img/logo-icon.svg" alt="" class="footer-menu-bottom__logo-img">
@@ -1152,7 +1152,7 @@
             <!-- /.footer-menu-bottom__networks -->
         </div>
         <!-- /.footer-menu-bottom -->
-        <span class="footer-menu__divider footer-menu__divider_main"></span>
+        <span class="footer__divider footer__divider_main"></span>
         <div class="footer-bottom">
           <p class="footer-bottom__slogan">
             Universal — это онлайн издание, в котором мы публикуем полезные материалы о веб разработке: статьи,

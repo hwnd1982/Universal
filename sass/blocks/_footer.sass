@@ -61,6 +61,13 @@
       &.invalid
         bottom: -10px
         right: 10px
+  &__divider
+    display: block
+    width: 100%
+    height: 1px
+    background: #D9DADB
+    &_main
+      grid-column: span 4
   &-menu
     grid-column: span 4
     width: 100%
@@ -88,8 +95,6 @@
       width: 100%
       height: 1px
       background: #D9DADB
-      &_main
-        grid-column: span 4
       &_blue
         height: 5px
         background: #4592FF
@@ -202,9 +207,9 @@
       grid-column: span 3
       grid-template-columns: repeat(2, 250px) 1fr
       grid-template-rows: 1fr 1fr
-      &__divider
-        &_main
-          grid-column: span 3
+    &__divider
+      &_main
+        rid-column: span 3
     &-menu
       &-bottom
         grid-column: span 3
@@ -231,9 +236,9 @@
       grid-column: span 2
       grid-template-columns: repeat(2, 200px) 1fr
       grid-template-rows: 1fr 1fr
-      &__divider
-        &_main
-          grid-column: span 2
+    &__divider
+      &_main
+        grid-column: span 2
     &-menu
       &-bottom
         grid-column: span 2
@@ -280,9 +285,9 @@
           grid-column: 2
           grid-row: 3
 
-      &__divider
-        &_main
-          grid-column: span 1
+    &__divider
+      &_main
+        grid-column: span 1
     &-menu
       &-bottom
         grid-column: span 1

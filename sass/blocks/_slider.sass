@@ -32,6 +32,7 @@
       opacity: 1
   &__buttons
     fill: rgba(255, 255, 255, 0.4)
+    cursor: pointer
     &-bar
       padding: 0 35px
       position: absolute
@@ -61,3 +62,7 @@
       &:hover
         transform: scale(1.5)
         box-shadow: 0 3px 10px rgba(255, 255, 255, 0.2)
+    &__buttons
+      transition: all 0.3s ease-in-out
+      &:hover
+        fill: rgba(255, 255, 255, 0.6)

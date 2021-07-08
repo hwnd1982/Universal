@@ -10,6 +10,7 @@
     border-radius: 10px
     background-color: $text-color
     overflow: hidden
+    text-decoration: none
     &-default
       padding: 25px 25px 30px
     &-big
@@ -71,3 +72,12 @@
         grid-row: span 2
       &-full, &-big
         grid-column: span 1
+
+@media (min-width: 992px)
+  .other-cards
+    &__item
+      &-default
+        transition: all 0.3s ease-in-out
+        &:hover
+          transform: scale(1.03)
+          box-shadow: 0 3px 10px rgba(255, 255, 255, 0.3)
