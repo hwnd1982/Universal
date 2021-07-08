@@ -75,6 +75,14 @@
     border: 1px solid #D9DADB
     background-color: $text-color
 
+.button-top
+  position: fixed
+  bottom: 50px
+  right: 50px
+  z-index: 100
+  &-icon
+    fill: rgba(0, 0, 0, 0.4)
+
 @media (max-width: 1200px)
   .container
     grid-template: min-content / 1fr 960px 1fr
@@ -95,12 +103,25 @@
     grid-template: min-content / 1fr 527px 1fr
   .inner
     grid-template-columns: repeat(2, 1fr)
+  .button-top
+    bottom: 25px
+    right: 25px
+    &-icon
+      width: 40px
+      height: 40px
+
 @media (max-width: 576px)
   .container
     grid-template: min-content / 1fr 87% 1fr
   .inner
     column-gap: 20px
     grid-template-columns: 1fr
+  .button-top
+    bottom: 15px
+    right: 15px
+    &-icon
+      width: 30px
+      height: 30px
 
 @media (max-width: 400px)
   .error

@@ -31,10 +31,13 @@ document.addEventListener('keydown', (event) => {
     const sliderPosition = document.querySelector('.slider').getBoundingClientRect();
     
     const sliderTop = sliderPosition.top;
+    console.log('sliderTop: ', sliderTop);
     const sliderHeight = sliderPosition.height;
-  
+    console.log('sliderHeight: ', sliderHeight);
+    console.log('window.innerHeight-sliderTop: ', window.innerHeight-sliderTop);
     
-    if ((sliderTop >= 0) && (window.innerHeight-sliderTop >= sliderHeight)) {
+    
+    if ((sliderTop >= -sliderHeight) && (window.innerHeight-sliderTop >= 0)) {
       if (event.code == 'ArrowRight') {
         scrollRight(activeSlideIndex, slidesList);
       }

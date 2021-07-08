@@ -7,3 +7,8 @@ const childOf = (childElem, className) => {
   }
   return childElem; 
 }
+
+document.querySelector('.button-top').addEventListener('click', (event) => {
+  event.preventDefault()
+  window.scrollTo({ top: 0, behavior: 'smooth' })
+})

@@ -30,8 +30,8 @@ const errorMessage = (elem, errorMessageContainer) => {
       errorMessageContainer.classList.add('invalid')
       return false
     } else {
-      if (elem.value.length < 10) {
-        errorMessageContainer.innerHTML = "*Длина сообщения 10 символов."
+      if (elem.value.length < 100) {
+        errorMessageContainer.innerHTML = "*Длина сообщения 100 символов."
         errorMessageContainer.classList.add('invalid')
         return false
       } else {
